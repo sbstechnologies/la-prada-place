@@ -26,6 +26,8 @@ import { Dumbbell, Gamepad2, Trash2, Users, Waves } from "lucide-react";
 
 import { Clock, Droplets, Phone, PawPrint, Mail } from "lucide-react";
 
+import { Sun, ShieldCheck, House, CarFront } from "lucide-react";
+
 import {
   images,
   homePageConfig,
@@ -96,15 +98,24 @@ export default function Home() {
     const iconClass = "h-3 w-3 shrink-0";
 
     if (
-      text.includes("fitness") ||
-      text.includes("health") ||
-      text.includes("wellness")
+      text.includes("sunroom") ||
+      text.includes("patio") ||
+      text.includes("outdoor")
     ) {
-      return <Dumbbell className={iconClass} />;
+      return <Sun className={iconClass} />;
+    }
+
+    if (
+      text.includes("gated") ||
+      text.includes("access") ||
+      text.includes("security")
+    ) {
+      return <ShieldCheck className={iconClass} />;
     }
 
     if (
       text.includes("clubhouse") ||
+      text.includes("coffee") ||
       text.includes("lounge") ||
       text.includes("community")
     ) {
@@ -114,31 +125,26 @@ export default function Home() {
     if (
       text.includes("pool") ||
       text.includes("swimming") ||
+      text.includes("hot tub") ||
       text.includes("relaxation")
     ) {
       return <Waves className={iconClass} />;
     }
 
     if (
-      text.includes("pergola") ||
-      text.includes("picnic") ||
-      text.includes("bbq") ||
-      text.includes("outdoor")
+      text.includes("townhouse") ||
+      text.includes("townhome") ||
+      text.includes("living")
     ) {
-      return <Gamepad2 className={iconClass} />;
-    }
-
-    if (text.includes("bark") || text.includes("pet") || text.includes("dog")) {
-      return <PawPrint className={iconClass} />;
+      return <House className={iconClass} />;
     }
 
     if (
-      text.includes("package") ||
-      text.includes("locker") ||
-      text.includes("secure") ||
-      text.includes("convenience")
+      text.includes("carport") ||
+      text.includes("garage") ||
+      text.includes("parking")
     ) {
-      return <Trash2 className={iconClass} />;
+      return <CarFront className={iconClass} />;
     }
 
     return null;
