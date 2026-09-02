@@ -194,7 +194,7 @@ export default function Home() {
         <Header showTopBar={showTopBar} />
 
         <Image
-          src={images.gallery7}
+          src={images.gallery21}
           alt={images.gallery_alt7}
           fill
           priority
@@ -407,7 +407,7 @@ export default function Home() {
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[Instrument_Serif] text-[#2d3230] leading-[1.2]">
               Discover The <br />
-              Best Of Dallas..
+              Best Of Dallas.
             </h2>
           </div>
 

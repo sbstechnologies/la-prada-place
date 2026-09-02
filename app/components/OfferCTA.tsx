@@ -18,9 +18,9 @@ export default function OfferCTA({ phone, tel }: OfferCTAProps) {
           </h2>
 
           <p className="mt-3 font-[Plus_Jakarta_Sans] text-[17px] text-white md:text-[18px]">
-            Special Promotion - 1 Month Free!{" "}
-            <span className="font-bold"> 1BR from $1,025</span> ·
-            <span className="font-bold"> 2BR from $1,200</span>
+            Act fast to get our today!{" "}
+            <span className="font-bold"> best rates</span> while they last.
+            Contact us for current details
           </p>
         </div>
 

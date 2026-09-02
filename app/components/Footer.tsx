@@ -87,28 +87,23 @@ export default function Footer() {
                     {siteConfig.email}
                   </a>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Mail size={17} className="text-[#76a1ff] shrink-0" />
-
-                  <a
-                    href={`mailto:${siteConfig.propertyManagerEmail}`}
-                    className="hover:text-white transition break-all  hover:translate-x-0.5"
-                  >
-                    {siteConfig.propertyManagerEmail}
-                  </a>
-                </div>
 
                 <div className="flex items-start gap-3">
                   <Clock
                     size={17}
                     className="text-[#76a1ff] shrink-0 mt-[3px]"
                   />
+                  <div className="flex flex-col gap-0">
+                    <span className="font-[Plus_Jakarta_Sans] text-[13px] leading-[1.4] text-[rgba(245,242,237,0.55)]">
+                      {siteConfig.hours}
+                    </span>
 
-                  <span>{siteConfig.hours}</span>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <span>{siteConfig.hours1}</span>
+                    {siteConfig.hours1 && (
+                      <span className="font-[Plus_Jakarta_Sans] text-[13px] leading-[1.4] text-[rgba(245,242,237,0.55)]">
+                        {siteConfig.hours1}
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
 

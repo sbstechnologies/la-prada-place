@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import TourScheduler from "@/app/components/TourScheduler";
+import { images, plans } from "../config/content";
 
 type BedroomType = "1bed" | "2bed";
 type GalleryTab = "photos" | "amenities";
@@ -36,9 +37,13 @@ type UnitOverviewProps = {
   onScheduleTour?: (plan: Plan, planId: string) => void;
 };
 
+// ============================================================
+// LA PRADA PLANS
+// ============================================================
+
 const bedroomPlans: Record<BedroomType, string[]> = {
   "1bed": ["A1", "A2", "A3"],
-  "2bed": ["B1", "B1U", "B2", "B2U"],
+  "2bed": ["B1", "B2"],
 };
 
 const bedroomDefaults: Record<BedroomType, string> = {
@@ -47,18 +52,41 @@ const bedroomDefaults: Record<BedroomType, string> = {
 };
 
 const bedroomPricing: Record<BedroomType, string> = {
-  "1bed": "From $995/mo",
-  "2bed": "From $1,325/mo",
+  "1bed": "From $1,025/mo",
+  "2bed": "From $1,200/mo",
 };
+export const interiorPhotos = {
+  "Living Room": images.gallery24,
+  Bedroom: images.gallery31,
+  Kitchen: images.gallery55,
+  Bathroom: images.gallery65,
+} as const;
 
-const photoCategories = [
-  "Living Room",
-  "Bedroom",
-  "Kitchen",
-  "Bathroom",
-] as const;
+export const amenityPhotos = {
+  Pool: images.gallery7,
+  Parking: images.gallery4,
+  Clubhouse: images.gallery8,
+  "Sunroom & Patio": images.gallery20,
+} as const;
 
-const amenityCategories = ["Pool", "Parking", "Dog Park", "Gym"] as const;
+export const photoCategories = Object.keys(interiorPhotos) as Array<
+  keyof typeof interiorPhotos
+>;
+
+export const amenityCategories = Object.keys(amenityPhotos) as Array<
+  keyof typeof amenityPhotos
+>;
+
+export type PreviewCategory = keyof typeof interiorPhotos;
+export type AmenityCategory = keyof typeof amenityPhotos;
+
+export const defaultPreviewImg = images.home1;
+
+export type PlanKey = keyof typeof plans;
+
+// ============================================================
+// UNIT OVERVIEW
+// ============================================================
 
 export default function UnitOverview({
   plans,
@@ -82,6 +110,10 @@ export default function UnitOverview({
 
   const [showTourScheduler, setShowTourScheduler] = useState(false);
 
+  // ==========================================================
+  // AVAILABLE PLANS
+  // ==========================================================
+
   const availablePlans = plans ?? {};
 
   const planIds = useMemo(
@@ -102,22 +134,30 @@ export default function UnitOverview({
 
   const floorPlanImage = currentPlan?.img || "";
 
+  // ==========================================================
+  // INTERIOR PHOTOS
+  // ==========================================================
+
   const interiorPhotos = useMemo(
     () => ({
-      "Living Room": images.gallery11,
-      Bedroom: images.gallery28,
-      Kitchen: images.gallery13,
-      Bathroom: images.gallery27,
+      "Living Room": images.gallery36,
+      Bedroom: images.gallery33,
+      Kitchen: images.gallery55,
+      Bathroom: images.gallery65,
     }),
     [images],
   );
 
+  // ==========================================================
+  // AMENITY PHOTOS
+  // ==========================================================
+
   const amenityPhotos = useMemo(
     () => ({
-      Pool: images.gallery7,
-      Parking: images.gallery34,
-      "Dog Park": images.gallery33,
-      Gym: images.gallery6,
+      Pool: images.gallery21,
+      Parking: images.gallery15,
+      Clubhouse: images.gallery8,
+      "Sunroom & Patio": images.gallery20,
     }),
     [images],
   );
@@ -129,8 +169,12 @@ export default function UnitOverview({
 
   const galleryAlt =
     tab === "photos"
-      ? `${previewCategory} at La Prada Place Apartment Homes in Euless, Texas`
-      : `${amenityCategory} at La Prada Place Apartment Homes in Euless, Texas`;
+      ? `${previewCategory} at La Prada Place Apartment Homes in Dallas, Texas`
+      : `${amenityCategory} at La Prada Place Apartment Homes in Dallas, Texas`;
+
+  // ==========================================================
+  // BEDROOM CHANGE
+  // ==========================================================
 
   const handleBedroomChange = (type: BedroomType) => {
     const availablePlanIds = bedroomPlans[type].filter((planId) =>
@@ -138,8 +182,13 @@ export default function UnitOverview({
     );
 
     setBedroomType(type);
+
     setSelectedPlan(availablePlanIds[0] ?? bedroomDefaults[type]);
   };
+
+  // ==========================================================
+  // TOUR
+  // ==========================================================
 
   const handleScheduleTour = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -151,6 +200,10 @@ export default function UnitOverview({
 
     setShowTourScheduler(true);
   };
+
+  // ==========================================================
+  // EMPTY STATE
+  // ==========================================================
 
   if (!currentPlan || !safeSelectedPlan) {
     return (
@@ -164,15 +217,19 @@ export default function UnitOverview({
     );
   }
 
+  // ==========================================================
+  // RENDER
+  // ==========================================================
+
   return (
     <section
       id="unit"
       className="mx-auto overflow-x-hidden bg-[#f5f2ee] px-6 pb-10 pt-24 xs:px-6 sm:px-6 sm:pb-12 sm:pt-28 md:px-20 md:pb-16 md:pt-32 lg:px-40 xl:px-40 xxl:px-80"
     >
       <div className="mx-auto max-w-[1920px]">
-        {/* =====================================================
+        {/* ====================================================
             HEADER
-        ===================================================== */}
+        ==================================================== */}
 
         <div className="grid items-start gap-6 md:grid-cols-2 md:gap-10">
           <div>
@@ -186,15 +243,15 @@ export default function UnitOverview({
           </div>
 
           <p className="max-w-[760px] font-[Plus_Jakarta_Sans] text-[15px] leading-relaxed text-[#5a6260] sm:text-base md:pt-2 md:text-[18px]">
-            Explore thoughtfully designed one and two-bedroom apartment homes
-            with detailed floor plans, pricing, interiors, and community
-            amenities.
+            Explore thoughtfully designed one and two-bedroom apartment homes at
+            La Prada Place, with detailed floor plans, pricing, interiors, and
+            community amenities.
           </p>
         </div>
 
-        {/* =====================================================
+        {/* ====================================================
             PROMOTION
-        ===================================================== */}
+        ==================================================== */}
 
         <div className="mt-8 flex flex-col gap-4 rounded-[16px] bg-gradient-to-br from-[#e09428] to-[#c87818] p-4 shadow-[0_4px_28px_rgba(224,148,40,0.45)] sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:p-[14px_24px]">
           <div className="flex flex-col items-start gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
@@ -231,9 +288,9 @@ export default function UnitOverview({
           </a>
         </div>
 
-        {/* =====================================================
+        {/* ====================================================
             FILTERS
-        ===================================================== */}
+        ==================================================== */}
 
         <div className="mt-6 flex flex-col gap-4 font-[Plus_Jakarta_Sans] xl:flex-row xl:items-center xl:justify-between">
           <div className="grid grid-cols-2 gap-2 sm:flex sm:gap-3">
@@ -263,6 +320,7 @@ export default function UnitOverview({
             })}
           </div>
 
+          {/* Plan Selector */}
           <div className="flex gap-2 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {planIds.map((planId) => {
               const plan = availablePlans[planId];
@@ -293,14 +351,14 @@ export default function UnitOverview({
           </div>
         </div>
 
-        {/* =====================================================
-            MAIN CARDS
-        ===================================================== */}
+        {/* ====================================================
+            MAIN CONTENT
+        ==================================================== */}
 
         <div className="mt-6 grid items-stretch gap-5 sm:gap-7 xl:grid-cols-[1.55fr_1fr]">
-          {/* =================================================
+          {/* ==================================================
               FLOOR PLAN
-          ================================================= */}
+          ================================================== */}
 
           <div className="overflow-hidden rounded-[20px] border border-[#ddd7cc] bg-[#fbfaf7] shadow-[0_2px_8px_rgba(26,29,27,0.04)] sm:rounded-[26px]">
             <div className="flex items-start justify-between gap-4 border-b border-[#ddd7cc] px-5 py-4 sm:px-6 sm:py-5 md:px-7">
@@ -319,6 +377,7 @@ export default function UnitOverview({
               </div>
             </div>
 
+            {/* Floor Plan Image */}
             <div className="relative h-[260px] border-b border-[#ddd7cc] bg-white sm:h-[360px] lg:h-[500px]">
               {floorPlanImage ? (
                 <img
@@ -336,12 +395,13 @@ export default function UnitOverview({
               )}
             </div>
 
+            {/* Plan Stats */}
             <div className="grid grid-cols-2 border-b border-[#ddd7cc] sm:grid-cols-4">
               {[
                 ["Bedroom", currentPlan.bed],
                 ["Bathroom", currentPlan.bath],
-                ["Area", currentPlan.area],
-                ["Available", "Available Now"],
+                ["Area", `${currentPlan.area} sq ft`],
+                ["Price", currentPlan.price],
               ].map(([label, value], index) => (
                 <div
                   key={label}
@@ -360,10 +420,7 @@ export default function UnitOverview({
               ))}
             </div>
 
-            {/* =================================================
-                PLAN FEATURES
-            ================================================= */}
-
+            {/* Plan Features */}
             <div className="px-5 py-4 font-[Plus_Jakarta_Sans] sm:px-6 sm:py-5 md:px-7">
               <p className="mb-4 font-[Plus_Jakarta_Sans] text-[11px] font-semibold uppercase tracking-[0.16em] text-[#50627a]">
                 Plan Features
@@ -391,13 +448,12 @@ export default function UnitOverview({
             </div>
           </div>
 
-          {/* =================================================
+          {/* ==================================================
               GALLERY / AMENITIES
-          ================================================= */}
+          ================================================== */}
 
           <div className="flex h-full flex-col overflow-hidden rounded-[20px] border border-[#ddd7cc] bg-[#fbfaf7] font-[Plus_Jakarta_Sans] shadow-[0_2px_8px_rgba(26,29,27,0.04)] sm:rounded-[26px]">
             {/* Tabs */}
-
             <div className="border-b border-[#ddd7cc] bg-[#f3f0ea] p-3">
               <div className="grid grid-cols-2 rounded-[18px] bg-[#eceff3] p-1">
                 {(["photos", "amenities"] as GalleryTab[]).map((item) => (
@@ -418,7 +474,6 @@ export default function UnitOverview({
             </div>
 
             {/* Categories */}
-
             <div className="border-b border-[#ddd7cc] bg-[#fbfaf7] px-3 py-3 sm:px-4">
               <div className="flex gap-2 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 {tab === "photos"
@@ -453,8 +508,7 @@ export default function UnitOverview({
               </div>
             </div>
 
-            {/* Gallery Image */}
-
+            {/* Gallery */}
             <div className="relative min-h-[320px] flex-1 overflow-hidden bg-[#ece8e1] sm:min-h-[420px]">
               {galleryImage ? (
                 <img
@@ -473,7 +527,6 @@ export default function UnitOverview({
             </div>
 
             {/* Actions */}
-
             <div className="border-t border-[#ddd7cc] bg-[#fbfaf7] px-4 py-4 sm:px-6 sm:py-5">
               <div className="mt-4 grid gap-3 sm:mt-6 sm:grid-cols-2">
                 <a
@@ -498,9 +551,9 @@ export default function UnitOverview({
         </div>
       </div>
 
-      {/* =====================================================
+      {/* ======================================================
           TOUR SCHEDULER
-      ===================================================== */}
+      ====================================================== */}
 
       <TourScheduler
         open={showTourScheduler}

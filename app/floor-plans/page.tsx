@@ -6,7 +6,6 @@ import Footer from "@/app/components/Footer";
 import FooterLegalBar from "@/app/components/FooterLegalBar";
 
 import { Bed, Bath, MoveUpRight } from "lucide-react";
-
 import { useMemo, useState } from "react";
 
 import {
@@ -47,14 +46,6 @@ function getFloorPlanAlt(plan: FloorPlan): string {
     return "Plan A3 one bedroom apartment floor plan at La Prada Place Apartment Homes";
   }
 
-  if (title.includes("a4")) {
-    return "Plan A4 one bedroom apartment with den floor plan at La Prada Place Apartment Homes";
-  }
-
-  if (title.includes("a5")) {
-    return "Plan A5 one bedroom apartment with den floor plan at La Prada Place Apartment Homes";
-  }
-
   if (title.includes("b1")) {
     return "Plan B1 two bedroom apartment floor plan at La Prada Place Apartment Homes";
   }
@@ -63,15 +54,11 @@ function getFloorPlanAlt(plan: FloorPlan): string {
     return "Plan B2 two bedroom apartment floor plan at La Prada Place Apartment Homes";
   }
 
-  if (title.includes("b3")) {
-    return "Plan B3 two bedroom apartment floor plan at La Prada Place Apartment Homes";
-  }
-
   return `${plan.title} floor plan at La Prada Place Apartment Homes`;
 }
 
 function getInteriorAlt(plan: FloorPlan): string {
-  return `${plan.title} apartment interior at La Prada Place Apartment Homes in Euless, Texas`;
+  return `${plan.title} apartment interior at La Prada Place Apartment Homes in Dallas, Texas`;
 }
 
 // ============================================================
@@ -103,10 +90,7 @@ function Card({
 
   return (
     <div className="overflow-hidden rounded-[26px] border border-[#e5ded3] bg-[#fffdf9] shadow-[0_18px_45px_rgba(26,29,27,0.12)]">
-      {/* ======================================================
-          INTERIOR IMAGE
-      ====================================================== */}
-
+      {/* Interior Images */}
       <div className="relative h-[275px] w-full overflow-hidden rounded-t-[26px]">
         <img
           src={interiorImages[currentImage]}
@@ -114,66 +98,56 @@ function Card({
           className="h-full w-full object-cover"
         />
 
-        {/* Premium */}
         {plan.popular && (
           <div className="absolute left-4 top-4 rounded-full bg-[#E09428] px-4 py-2 font-[Plus_Jakarta_Sans] text-[12px] font-bold text-white shadow-md">
             Featured
           </div>
         )}
 
-        {/* Availability */}
         <div className="absolute right-4 top-4 rounded-full bg-[#2f3642]/95 px-4 py-2 font-[Plus_Jakarta_Sans] text-[13px] font-bold text-white shadow-md">
           {plan.available}
         </div>
 
-        {/* Previous */}
         {interiorImages.length > 1 && (
-          <button
-            type="button"
-            aria-label="Previous image"
-            onClick={prevImage}
-            className="absolute left-5 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-black/35 text-[24px] leading-none text-white backdrop-blur-sm transition hover:bg-black/50"
-          >
-            ‹
-          </button>
-        )}
+          <>
+            <button
+              type="button"
+              aria-label="Previous image"
+              onClick={prevImage}
+              className="absolute left-5 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-black/35 text-[24px] text-white backdrop-blur-sm transition hover:bg-black/50"
+            >
+              ‹
+            </button>
 
-        {/* Next */}
-        {interiorImages.length > 1 && (
-          <button
-            type="button"
-            aria-label="Next image"
-            onClick={nextImage}
-            className="absolute right-5 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-black/35 text-[24px] leading-none text-white backdrop-blur-sm transition hover:bg-black/50"
-          >
-            ›
-          </button>
-        )}
+            <button
+              type="button"
+              aria-label="Next image"
+              onClick={nextImage}
+              className="absolute right-5 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-black/35 text-[24px] text-white backdrop-blur-sm transition hover:bg-black/50"
+            >
+              ›
+            </button>
 
-        {/* Dots */}
-        {interiorImages.length > 1 && (
-          <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 items-center gap-2">
-            {interiorImages.map((_, index) => (
-              <button
-                key={index}
-                type="button"
-                aria-label={`View image ${index + 1}`}
-                onClick={() => setCurrentImage(index)}
-                className={`rounded-full transition-all ${
-                  currentImage === index
-                    ? "h-[7px] w-[23px] bg-white"
-                    : "h-[7px] w-[7px] bg-white/60"
-                }`}
-              />
-            ))}
-          </div>
+            <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 items-center gap-2">
+              {interiorImages.map((_, index) => (
+                <button
+                  key={index}
+                  type="button"
+                  aria-label={`View image ${index + 1}`}
+                  onClick={() => setCurrentImage(index)}
+                  className={`rounded-full transition-all ${
+                    currentImage === index
+                      ? "h-[7px] w-[23px] bg-white"
+                      : "h-[7px] w-[7px] bg-white/60"
+                  }`}
+                />
+              ))}
+            </div>
+          </>
         )}
       </div>
 
-      {/* ======================================================
-          FLOOR PLAN
-      ====================================================== */}
-
+      {/* Floor Plan */}
       <div className="relative h-[355px] w-full border-b border-[#eee7dc] bg-[#fbfaf7]">
         <img
           src={plan.images[0]}
@@ -182,10 +156,7 @@ function Card({
         />
       </div>
 
-      {/* ======================================================
-          CONTENT
-      ====================================================== */}
-
+      {/* Content */}
       <div className="bg-[#fffdf9] px-6 pb-7 pt-7 md:px-7">
         <p className="mb-2 font-[Plus_Jakarta_Sans] text-[12px] font-bold uppercase tracking-[0.22em] text-[#E09428]">
           {plan.series}
@@ -202,26 +173,19 @@ function Card({
         {/* Specs */}
         <div className="mt-6 flex flex-wrap items-center gap-6 font-[Plus_Jakarta_Sans] text-[15px] font-bold text-[#15191f]">
           <div className="flex items-center gap-2">
-            <Bed className="h-5 w-5 text-[#1f376d]" strokeWidth={2} />
+            <Bed className="h-5 w-5 text-[#1f376d]" />
             <span>{plan.beds}</span>
           </div>
 
           <div className="flex items-center gap-2">
-            <Bath className="h-5 w-5 text-[#1f376d]" strokeWidth={2} />
+            <Bath className="h-5 w-5 text-[#1f376d]" />
             <span>{plan.baths}</span>
           </div>
 
           <div className="flex items-center gap-2">
             <div className="relative h-5 w-5 text-[#1f376d]">
-              <MoveUpRight
-                className="absolute inset-0 h-5 w-5"
-                strokeWidth={2}
-              />
-
-              <MoveUpRight
-                className="absolute inset-0 h-5 w-5 rotate-180"
-                strokeWidth={2}
-              />
+              <MoveUpRight className="absolute inset-0 h-5 w-5" />
+              <MoveUpRight className="absolute inset-0 h-5 w-5 rotate-180" />
             </div>
 
             <span>{plan.area} sq ft</span>
@@ -251,7 +215,7 @@ function Card({
           ))}
         </div>
 
-        {/* Buttons */}
+        {/* Actions */}
         <div className="mt-[50px] flex flex-col gap-3">
           {plan.tour?.trim() && (
             <button
@@ -396,83 +360,52 @@ function ComparisonDrawer({
               ))}
             </div>
 
-            <div>
-              <div className="flex h-[74px] items-center border-b border-[#d8d2c7]">
-                <h3 className="font-[Instrument_Serif] text-[38px] text-[#2d3230]">
-                  {leftPlan.title}
-                </h3>
-              </div>
+            {[leftPlan, rightPlan].map((plan, planIndex) => (
+              <div key={plan.title}>
+                <div className="flex h-[74px] items-center gap-3 border-b border-[#d8d2c7]">
+                  <h3 className="font-[Instrument_Serif] text-[38px] text-[#2d3230]">
+                    {plan.title}
+                  </h3>
 
-              {rows.map((row) => {
-                const highlight =
-                  row.label === "PRICE"
-                    ? cheaperPrice(leftPlan.price, rightPlan.price)
-                    : row.label === "SQ FOOTAGE"
-                      ? biggerArea(leftPlan.area, rightPlan.area)
-                      : false;
-
-                return (
-                  <div
-                    key={row.label}
-                    className="flex h-[52px] items-center border-b border-[#d8d2c7] text-[22px] text-[#2d3230]"
-                  >
-                    <span
-                      className={
-                        highlight ? "font-semibold text-[#29488d]" : ""
-                      }
-                    >
-                      {row.left}
+                  {plan.popular && (
+                    <span className="rounded-full bg-[#E09428] px-3 py-1 text-xs font-medium text-white">
+                      Featured
                     </span>
+                  )}
+                </div>
 
-                    {highlight && (
-                      <span className="ml-2 text-[#E09428]">★</span>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
+                {rows.map((row) => {
+                  const current = planIndex === 0 ? row.left : row.right;
+                  const other = planIndex === 0 ? row.right : row.left;
 
-            <div>
-              <div className="flex h-[74px] items-center gap-3 border-b border-[#d8d2c7]">
-                <h3 className="font-[Instrument_Serif] text-[38px] text-[#2d3230]">
-                  {rightPlan.title}
-                </h3>
+                  const highlight =
+                    row.label === "PRICE"
+                      ? cheaperPrice(current, other)
+                      : row.label === "SQ FOOTAGE"
+                        ? biggerArea(current, other)
+                        : false;
 
-                {rightPlan.popular && (
-                  <span className="rounded-full bg-[#E09428] px-3 py-1 text-xs font-medium text-white">
-                    Featured
-                  </span>
-                )}
-              </div>
-
-              {rows.map((row) => {
-                const highlight =
-                  row.label === "PRICE"
-                    ? cheaperPrice(rightPlan.price, leftPlan.price)
-                    : row.label === "SQ FOOTAGE"
-                      ? biggerArea(rightPlan.area, leftPlan.area)
-                      : false;
-
-                return (
-                  <div
-                    key={row.label}
-                    className="flex h-[52px] items-center border-b border-[#d8d2c7] text-[22px] text-[#2d3230]"
-                  >
-                    <span
-                      className={
-                        highlight ? "font-semibold text-[#29488d]" : ""
-                      }
+                  return (
+                    <div
+                      key={row.label}
+                      className="flex h-[52px] items-center border-b border-[#d8d2c7] text-[22px] text-[#2d3230]"
                     >
-                      {row.right}
-                    </span>
+                      <span
+                        className={
+                          highlight ? "font-semibold text-[#29488d]" : ""
+                        }
+                      >
+                        {current}
+                      </span>
 
-                    {highlight && (
-                      <span className="ml-2 text-[#E09428]">★</span>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
+                      {highlight && (
+                        <span className="ml-2 text-[#E09428]">★</span>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            ))}
           </div>
 
           {/* Mobile */}
@@ -594,7 +527,7 @@ function UnitDetailModal({
 
               {/* Thumbnails */}
               <div className="flex gap-3 overflow-x-auto px-5 py-4">
-                {allImages.slice(0, 5).map((img, index) => {
+                {allImages.map((img, index) => {
                   const floor = index === allImages.length - 1;
 
                   return (
@@ -645,7 +578,7 @@ function UnitDetailModal({
                   ["BATHROOMS", plan.baths],
                   ["SQUARE FEET", plan.area],
                   ["STARTING FROM", plan.price],
-                  ["AVAILABLE", plan.available.replace("available", "units")],
+                  ["AVAILABLE", plan.available],
                 ].map(([label, value]) => (
                   <div
                     key={label}
@@ -702,21 +635,21 @@ function UnitDetailModal({
 }
 
 // ============================================================
-// MAIN FLOOR PLANS PAGE
+// MAIN LA PRADA FLOOR PLANS PAGE
 // ============================================================
 
 export default function Floor() {
   const [selectedCompare, setSelectedCompare] = useState<string[]>([]);
-
   const [detailPlan, setDetailPlan] = useState<FloorPlan | null>(null);
-
   const [selectedBedroom, setSelectedBedroom] = useState("All Plans");
 
-  // La Prada Place has ONLY 1 & 2 bedroom homes.
   const bedroomFilters = ["All Plans", "1 Bedroom", "2 Bedrooms"];
 
-  // Only La Prada Place plans.
-  const villageGreenPlans = useMemo(
+  // ==========================================================
+  // LA PRADA PLANS
+  // ==========================================================
+
+  const laPradaPlans = useMemo(
     () =>
       floorPlans.filter((plan) => {
         const bedrooms = Number(String(plan.beds).match(/\d+/)?.[0] ?? 0);
@@ -728,17 +661,17 @@ export default function Floor() {
 
   const filteredFloorPlans = useMemo(() => {
     if (selectedBedroom === "All Plans") {
-      return villageGreenPlans;
+      return laPradaPlans;
     }
 
     const bedroomCount = Number(selectedBedroom.match(/\d+/)?.[0] ?? 0);
 
-    return villageGreenPlans.filter((plan) => {
+    return laPradaPlans.filter((plan) => {
       const planBedrooms = Number(String(plan.beds).match(/\d+/)?.[0] ?? 0);
 
       return planBedrooms === bedroomCount;
     });
-  }, [selectedBedroom, villageGreenPlans]);
+  }, [selectedBedroom, laPradaPlans]);
 
   // ==========================================================
   // COMPARISON
@@ -759,33 +692,53 @@ export default function Floor() {
   };
 
   const selectedPlans = useMemo(
-    () =>
-      villageGreenPlans.filter((plan) => selectedCompare.includes(plan.title)),
-    [selectedCompare, villageGreenPlans],
+    () => laPradaPlans.filter((plan) => selectedCompare.includes(plan.title)),
+    [selectedCompare, laPradaPlans],
   );
 
-  const clearComparison = () => setSelectedCompare([]);
+  const clearComparison = () => {
+    setSelectedCompare([]);
+  };
 
   // ==========================================================
   // STATISTICS
   // ==========================================================
 
-  const planCount = villageGreenPlans.length;
+  const planCount = laPradaPlans.length;
 
-  const oneBedroomCount = villageGreenPlans.filter((plan) =>
+  const oneBedroomCount = laPradaPlans.filter((plan) =>
     String(plan.beds).includes("1"),
   ).length;
 
-  const twoBedroomCount = villageGreenPlans.filter((plan) =>
+  const twoBedroomCount = laPradaPlans.filter((plan) =>
     String(plan.beds).includes("2"),
   ).length;
 
+  const startingPrice = useMemo(() => {
+    const prices = laPradaPlans
+      .map((plan) => Number(plan.price.replace(/[^0-9]/g, "")))
+      .filter((price) => !Number.isNaN(price));
+
+    return prices.length ? Math.min(...prices) : 0;
+  }, [laPradaPlans]);
+
+  const areaRange = useMemo(() => {
+    const areas = laPradaPlans
+      .map((plan) => Number(plan.area.replace(/[^0-9]/g, "")))
+      .filter((area) => !Number.isNaN(area));
+
+    if (!areas.length) {
+      return "—";
+    }
+
+    const min = Math.min(...areas);
+    const max = Math.max(...areas);
+
+    return min === max ? `${min}` : `${min} - ${max}`;
+  }, [laPradaPlans]);
+
   return (
     <>
-      {/* ======================================================
-          HEADER
-      ====================================================== */}
-
       <HeaderOther />
 
       <PromoCardWidget />
@@ -795,12 +748,11 @@ export default function Floor() {
       ====================================================== */}
 
       <section className="relative mx-auto min-h-[620px] overflow-hidden bg-[#1f376d] px-6 pb-20 pt-[84px] text-[#F5F2ED] md:px-20 md:py-28 lg:px-40">
-        {/* Dots */}
         <div className="pointer-events-none absolute inset-0 opacity-[0.12] [background-image:radial-gradient(rgba(245,242,237,0.45)_1px,transparent_1px)] [background-size:50px_50px]" />
 
         <div className="relative z-10 max-w-[720px]">
           <p className="mb-6 mt-[15px] font-[Plus_Jakarta_Sans] text-xs font-bold uppercase tracking-[0.3em] text-[#E09428]">
-            La Prada Place Apartment Homes · Euless, TX
+            La Prada Place Apartment Homes · Dallas, TX
           </p>
 
           <h1 className="font-[Instrument_Serif] text-[48px] leading-[0.98] tracking-[-0.04em] text-[#F5F2ED] md:text-[64px]">
@@ -809,18 +761,18 @@ export default function Floor() {
           </h1>
 
           <p className="mt-[28px] max-w-[1920px] font-[Plus_Jakarta_Sans] text-[18px] leading-[1.72] tracking-[-0.02em] text-[#b7bfd0] md:text-[20px]">
-            Ten thoughtfully designed 1 and 2-bedroom layouts - from efficient
-            one-bedroom residences with sunrooms to expansive two-bedroom
-            apartment homes with private patios.
+            Five thoughtfully designed 1 and 2-bedroom layouts from efficient
+            one-bedroom residences and townhome-style living to expansive
+            two-bedroom apartment homes with private patios.
           </p>
 
           {/* Stats */}
           <div className="mt-[58px] grid grid-cols-2 gap-x-[52px] gap-y-8 md:grid-cols-4">
             {[
               [String(planCount), "FLOOR PLANS"],
-              [String(oneBedroomCount + twoBedroomCount), "UNITS AVAILABLE"],
-              ["597 - 1,102", "Sq Ft Range"],
-              ["$ 999", "STARTING FROM"],
+              [String(oneBedroomCount + twoBedroomCount), "PLANS AVAILABLE"],
+              [areaRange, "SQ FT RANGE"],
+              [`$${startingPrice.toLocaleString()}`, "STARTING FROM"],
             ].map(([value, label]) => (
               <div key={label}>
                 <h2 className="font-[Instrument_Serif] text-[34px] leading-none tracking-[-0.05em] text-white">
@@ -924,10 +876,7 @@ export default function Floor() {
         </div>
       </section>
 
-      {/* ======================================================
-          COMPARISON DRAWER
-      ====================================================== */}
-
+      {/* Comparison */}
       {selectedPlans.length === 2 && (
         <ComparisonDrawer
           leftPlan={selectedPlans[0]}
@@ -936,20 +885,13 @@ export default function Floor() {
         />
       )}
 
-      {/* ======================================================
-          DETAIL MODAL
-      ====================================================== */}
-
+      {/* Detail */}
       {detailPlan && (
         <UnitDetailModal
           plan={detailPlan}
           onClose={() => setDetailPlan(null)}
         />
       )}
-
-      {/* ======================================================
-          FOOTER
-      ====================================================== */}
 
       <Footer />
 

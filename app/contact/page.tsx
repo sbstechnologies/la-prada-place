@@ -33,7 +33,7 @@ export default function Contact() {
             specials?
             <br />
             Our dedicated leasing team is here to help you find your perfect new
-            home in Euless Worth.
+            home in Dallas at La Prada Place.
           </p>
         </div>
       </section>

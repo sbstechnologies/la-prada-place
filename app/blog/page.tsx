@@ -19,7 +19,7 @@ export default function Blog() {
       [images.blog7]: images.blog_alt7,
     };
 
-    return altMap[src] ?? "La Prada Place Apartment Homes in Euless, Texas";
+    return altMap[src] ?? "La Prada Place Apartment Homes in Dallas, Texas";
   };
   const [showTopBar, setShowTopBar] = useState(true);
   const [selectedPost, setSelectedPost] = useState<Post | null>(null);
@@ -31,7 +31,7 @@ export default function Blog() {
       <section className="bg-[#1f376d] text-white pt-32 pb-24 px-6 xs:px-6 sm:px-6 md:px-20 lg:px-40 xl:px-40 xxl:px-80 mx-autorelative overflow-hidden">
         <div className="relative z-10 max-w-5xl">
           <p className="text-xs tracking-[0.3em] text-[#E09428] mb-6 mt-[15px] font-bold uppercase">
-            Euless LIVING GUIDE
+            Dallas LIVING GUIDE
           </p>
 
           <h1 className="font-[Instrument_Serif] text-[54px] md:text-[54px] sm:text-[54px] lg:text-[54px] leading-[0.98] tracking-[-0.04em] text-[#F5F2ED]">
@@ -42,7 +42,7 @@ export default function Blog() {
           <p className="mt-8 text-[#bfc6d6] text-base md:text-lg leading-relaxed max-w-2xl font-[Plus_Jakarta_Sans]">
             Your curated guide to life around La Prada Place Apartment Homes,
             featuring local dining, outdoor recreation, neighborhood
-            attractions, and everyday experiences in Euless, Texas.
+            attractions, and everyday experiences in Dallas, Texas.
           </p>
         </div>
       </section>

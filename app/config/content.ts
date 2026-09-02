@@ -37,6 +37,8 @@ export const images = {
   home33: "/images/property/33.webp",
   home34: "/images/property/34.webp",
   home35: "/images/property/35.webp",
+  home36: "/images/property/36.webp",
+  home37: "/images/property/37.webp",
 
   // ==============================
   // PROPERTY ALT TEXT
@@ -138,136 +140,388 @@ export const images = {
 
   property_alt35:
     "La Prada Place Apartment Homes community grounds in Dallas Texas",
+  property_alt36: "La Prada Place Apartment Homes Clubhouse in Dallas Texas",
+  property_alt37:
+    "La Prada Place Apartment Homes Car Parking Area in Dallas Texas",
 
-  gallery1: "/images/gallery/1.webp",
-  gallery2: "/images/gallery/2.webp",
-  gallery3: "/images/gallery/3.webp",
-  gallery4: "/images/gallery/4.webp",
-  gallery5: "/images/gallery/5.webp",
-  gallery6: "/images/gallery/6.webp",
-  gallery7: "/images/gallery/7.webp",
-  gallery8: "/images/gallery/8.webp",
-  gallery9: "/images/gallery/9.webp",
-  gallery10: "/images/gallery/10.webp",
-  gallery11: "/images/gallery/11.webp",
-  gallery12: "/images/gallery/12.webp",
-  gallery13: "/images/gallery/13.webp",
-  gallery14: "/images/gallery/14.webp",
-  gallery15: "/images/gallery/15.webp",
-  gallery16: "/images/gallery/16.webp",
-  gallery17: "/images/gallery/17.webp",
-  gallery18: "/images/gallery/18.webp",
-  gallery19: "/images/gallery/19.webp",
-  gallery20: "/images/gallery/20.webp",
-  gallery21: "/images/gallery/21.webp",
-  gallery22: "/images/gallery/22.webp",
-  gallery23: "/images/gallery/23.webp",
-  gallery24: "/images/gallery/24.webp",
-  gallery25: "/images/gallery/25.webp",
-  gallery26: "/images/gallery/26.webp",
-  gallery27: "/images/gallery/27.webp",
-  gallery28: "/images/gallery/28.webp",
-  gallery29: "/images/gallery/29.webp",
-  gallery30: "/images/gallery/30.webp",
-  gallery31: "/images/gallery/31.webp",
-  gallery32: "/images/gallery/32.webp",
-  gallery33: "/images/gallery/33.webp",
-  gallery34: "/images/gallery/34.webp",
-  gallery35: "/images/gallery/35.webp",
+  // Existing gallery images
+  gallery1: "/images/2026/1.webp",
+  gallery2: "/images/2026/2.webp",
+  gallery3: "/images/2026/3.webp",
+  gallery4: "/images/2026/4.webp",
+  gallery5: "/images/2026/5.webp",
+  gallery6: "/images/2026/6.webp",
+  gallery7: "/images/2026/7.webp",
+  gallery8: "/images/2026/8.webp",
+  gallery9: "/images/2026/9.webp",
+  gallery10: "/images/2026/10.webp",
+  gallery11: "/images/2026/11.webp",
+  gallery12: "/images/2026/12.webp",
+  gallery13: "/images/2026/13.webp",
+  gallery14: "/images/2026/14.webp",
+  gallery15: "/images/2026/15.webp",
+
+  gallery16: "/images/2026/photo/2.webp",
+  gallery17: "/images/2026/photo/3.webp",
+  gallery18: "/images/2026/photo/4.webp",
+  gallery19: "/images/2026/photo/5.webp",
+  gallery20: "/images/2026/photo/6.webp",
+  gallery21: "/images/2026/photo/7.webp",
+  gallery22: "/images/2026/photo/8.webp",
+  gallery23: "/images/2026/photo/9.webp",
+  gallery24: "/images/2026/photo/10.webp",
+  gallery25: "/images/2026/photo/11.webp",
+  gallery26: "/images/2026/photo/12.webp",
+  gallery27: "/images/2026/photo/13.webp",
+  gallery28: "/images/2026/photo/14.webp",
+  gallery29: "/images/2026/photo/15.webp",
+  gallery30: "/images/2026/photo/16.webp",
+  gallery31: "/images/2026/photo/17.webp",
+  gallery32: "/images/2026/photo/18.webp",
+  gallery33: "/images/2026/photo/19.webp",
+  gallery34: "/images/2026/photo/20.webp",
+  gallery35: "/images/2026/photo/21.webp",
+  gallery36: "/images/2026/photo/22.webp",
+  gallery37: "/images/2026/photo/23.webp",
+  gallery38: "/images/2026/photo/24.webp",
+  gallery39: "/images/2026/photo/25.webp",
+  gallery40: "/images/2026/photo/26.webp",
+  gallery41: "/images/2026/photo/27.webp",
+  gallery42: "/images/2026/photo/28.webp",
+  gallery43: "/images/2026/photo/29.webp",
+  gallery44: "/images/2026/photo/30.webp",
+  gallery45: "/images/2026/photo/31.webp",
+  gallery46: "/images/2026/photo/32.webp",
+  gallery47: "/images/2026/photo/33.webp",
+  gallery48: "/images/2026/photo/34.webp",
+  gallery49: "/images/2026/1080/1.webp",
+  gallery50: "/images/2026/1080/2.webp",
+  gallery51: "/images/2026/1080/3.webp",
+  gallery52: "/images/2026/1080/4.webp",
+  gallery53: "/images/2026/1080/5.webp",
+  gallery54: "/images/2026/1080/6.webp",
+  gallery55: "/images/2026/1080/7.webp",
+  gallery56: "/images/2026/1080/8.webp",
+  gallery57: "/images/2026/1080/9.webp",
+  gallery58: "/images/2026/1080/10.webp",
+  gallery59: "/images/2026/1080/11.webp",
+  gallery60: "/images/2026/1080/12.webp",
+  gallery61: "/images/2026/1080/13.webp",
+  gallery62: "/images/2026/1080/14.webp",
+  gallery63: "/images/2026/1080/15.webp",
+  gallery64: "/images/2026/1080/16.webp",
+  gallery65: "/images/2026/1080/17.webp",
+  gallery66: "/images/2026/1080/18.webp",
+  gallery67: "/images/2026/1080/19.webp",
+  gallery68: "/images/2026/1080/20.webp",
+  gallery69: "/images/2026/1080/21.webp",
+  gallery70: "/images/2026/1080/22.webp",
+  gallery71: "/images/2026/1080/23.webp",
+  gallery72: "/images/2026/1080/24.webp",
+  gallery73: "/images/2026/1080/25.webp",
+  gallery74: "/images/2026/1080/26.webp",
+  gallery75: "/images/2026/1080/27.webp",
+  gallery76: "/images/2026/1080/28.webp",
+  gallery77: "/images/2026/1080/29.webp",
+  gallery78: "/images/2026/1080/30.webp",
+  gallery79: "/images/2026/1080/31.webp",
+  gallery80: "/images/2026/1080/32.webp",
+  gallery81: "/images/2026/1080/33.webp",
+  gallery82: "/images/2026/1080/34.webp",
+  gallery83: "/images/2026/1080/35.webp",
+  gallery84: "/images/2026/1080/36.webp",
+  gallery85: "/images/2026/1080/37.webp",
+  gallery86: "/images/2026/1080/38.webp",
+  gallery87: "/images/2026/1080/39.webp",
+  gallery88: "/images/2026/1080/40.webp",
+  gallery89: "/images/2026/1080/41.webp",
+  gallery90: "/images/2026/1080/42.webp",
+  gallery91: "/images/2026/1080/43.webp",
+  gallery92: "/images/2026/1080/44.webp",
+  gallery93: "/images/2026/1080/45.webp",
+
+  // ==============================
+  // GALLERY ALT TEXT 1–93
+  // ==============================
 
   gallery_alt1:
-    "La Prada Place Apartment Homes apartment community exterior in Euless Texas",
+    "Community aerial view at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt2:
-    "La Prada Place Apartment Homes community entrance in Euless Texas",
+    "Gated entrance and flags at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt3:
-    "La Prada Place Apartment Homes landscaped apartment grounds in Euless Texas",
+    "Aerial view of residential buildings at La Prada Place Apartment Homes in Dallas Texas",
 
-  gallery_alt4: "La Prada Place Apartment Homes apartment building exterior",
+  gallery_alt4:
+    "Parking lot and community entry at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt5:
-    "La Prada Place Apartment Homes clubhouse exterior in Euless Texas",
+    "Leasing office parking entrance at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt6:
-    "La Prada Place Apartment Homes resident clubhouse and community amenities",
+    "Leasing center walkway at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt7:
-    "La Prada Place Apartment Homes swimming pool and outdoor lounge",
+    "Monument entry sign at La Prada Place Apartment Homes in Dallas Texas",
 
-  gallery_alt8: "Resort-style swimming pool at La Prada Place Apartment Homes",
+  gallery_alt8:
+    "Resident clubhouse fireplace at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt9:
-    "Swimming pool and landscaped grounds at La Prada Place Apartment Homes",
+    "Clubhouse social lounge at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt10:
-    "Outdoor pool area at La Prada Place Apartment Homes apartments",
+    "Resident seating and TV area at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt11:
-    "La Prada Place Apartment Homes poolside seating and outdoor recreation area",
+    "Open clubhouse floor plan at La Prada Place Apartment Homes in Dallas Texas",
 
-  gallery_alt12: "La Prada Place Apartment Homes apartment community courtyard",
+  gallery_alt12:
+    "Clubhouse reception hall at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt13:
-    "La Prada Place Apartment Homes landscaped courtyard and walkways",
+    "Resident coffee bar and island at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt14:
-    "La Prada Place Apartment Homes outdoor community gathering area",
+    "Kitchenette and social bar at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt15:
-    "La Prada Place Apartment Homes apartment living room interior",
+    "Resident covered parking at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt16:
-    "Spacious living room inside a La Prada Place Apartment Homes apartment",
+    "Clubhouse entry and foyer at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt17:
-    "Modern apartment living space at La Prada Place Apartment Homes",
+    "Clubhouse fireplace hearth at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt18:
-    "Comfortable apartment living area at La Prada Place Apartment Homes",
+    "Sunlit clubhouse seating at La Prada Place Apartment Homes in Dallas Texas",
 
-  gallery_alt19: "La Prada Place Apartment Homes apartment dining area",
+  gallery_alt19:
+    "Resident lounge with French doors at La Prada Place Apartment Homes in Dallas Texas",
 
-  gallery_alt20: "Modern apartment kitchen at La Prada Place Apartment Homes",
+  gallery_alt20:
+    "Covered patio sunroom at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt21:
-    "La Prada Place Apartment Homes kitchen with modern appliances",
+    "Resort-style swimming pool at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt22:
-    "Apartment kitchen and dining area at La Prada Place Apartment Homes",
+    "Pool deck and sundeck at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt23:
-    "Modern kitchen with countertop and appliances at La Prada Place Apartment Homes",
+    "Apartment entry hallway at La Prada Place Apartment Homes in Dallas Texas",
 
-  gallery_alt24: "Spacious apartment kitchen at La Prada Place Apartment Homes",
+  gallery_alt24:
+    "Living room with fireplace at La Prada Place Apartment Homes in Dallas Texas",
 
-  gallery_alt25: "La Prada Place Apartment Homes apartment bedroom interior",
+  gallery_alt25:
+    "Sunlit living and dining room at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt26:
-    "Spacious bedroom inside a La Prada Place Apartment Homes apartment",
+    "Living area with picture windows at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt27:
-    "Modern bedroom living space at La Prada Place Apartment Homes",
+    "Contemporary galley kitchen at La Prada Place Apartment Homes in Dallas Texas",
 
-  gallery_alt28: "La Prada Place Apartment Homes apartment bathroom",
+  gallery_alt28:
+    "Kitchen with direct patio access at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt29:
-    "Modern bathroom with contemporary finishes at La Prada Place Apartment Homes",
+    "Modern bathroom vanity and tub at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt30:
-    "Apartment bathroom interior at La Prada Place Apartment Homes",
+    "Extended double-sink vanity at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt31:
-    "La Prada Place Apartment Homes walk-in closet and apartment storage",
+    "Primary bedroom with ceiling fan at La Prada Place Apartment Homes in Dallas Texas",
 
-  gallery_alt32: "Spacious apartment closet at La Prada Place Apartment Homes",
+  gallery_alt32:
+    "Bedroom suite and closet at La Prada Place Apartment Homes in Dallas Texas",
 
   gallery_alt33:
-    "La Prada Place Apartment Homes apartment patio and outdoor space",
+    "Spacious secondary bedroom at La Prada Place Apartment Homes in Dallas Texas",
 
-  gallery_alt34: "Private apartment balcony at La Prada Place Apartment Homes",
+  gallery_alt34:
+    "Bedroom corner windows at La Prada Place Apartment Homes in Dallas Texas",
 
-  gallery_alt35: "La Prada Place Apartment Homes outdoor patio area",
+  gallery_alt35:
+    "Vaulted ceiling living room at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt36:
+    "Townhome living room and stairs at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt37:
+    "Open living area with picture window at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt38:
+    "Vaulted ceiling fireplace at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt39:
+    "Upgraded kitchen with black appliances at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt40:
+    "Kitchen counter and breakfast bar at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt41:
+    "Modern vanity and linen storage at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt42:
+    "Primary bedroom corner view at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt43:
+    "Bedroom and sliding closet at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt44:
+    "Bedroom with dual mirrored closets at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt45:
+    "Second bedroom with ceiling fan at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt46:
+    "Private balcony screened porch at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt47:
+    "Balcony storage and green views at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt48:
+    "Extended covered balcony at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt49:
+    "Private front entry foyer at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt50:
+    "Wood-style living room and fireplace at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt51:
+    "Spacious open concept living area at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt52:
+    "Open living and dining concept at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt53:
+    "Living area foyer view at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt54:
+    "Living room with French door access at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt55:
+    "Classic white kitchen at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt56:
+    "Kitchen double sink and counters at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt57:
+    "Bright galley kitchen at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt58:
+    "Kitchen entry and refrigerator at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt59:
+    "Full-size washer and dryer hookups at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt60:
+    "Bedroom window and ceiling fan at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt61:
+    "Bedroom hallway entry at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt62:
+    "Bedroom suite dressing area at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt63:
+    "Bedroom walk-in closet nook at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt64:
+    "Contemporary white vanity at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt65:
+    "Full bathroom and tub surround at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt66:
+    "Bedroom with double closets at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt67:
+    "Bedroom layout and sliding doors at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt68:
+    "Bright corner bedroom at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt69:
+    "Sunlit secondary bedroom at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt70:
+    "Covered private patio at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt71:
+    "Enclosed patio storage at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt72:
+    "Second-floor private balcony at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt73:
+    "Outdoor storage closet at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt74:
+    "Interior unit entryway at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt75:
+    "Townhome living area and kitchen pass at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt76:
+    "Living room center fireplace at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt77:
+    "Living room and breakfast bar nook at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt78:
+    "Vaulted ceiling living nook at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt79:
+    "Sunlit open living room at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt80:
+    "Kitchen breakfast bar and cabinets at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt81:
+    "Kitchen layout and patio door at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt82:
+    "Hallway to bedrooms and bath at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt83:
+    "Full bathroom vanity and mirror at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt84:
+    "Large double-sink bath vanity at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt85:
+    "Walk-in closet with built-in shelving at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt86:
+    "Primary bedroom with en-suite entry at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt87:
+    "Spacious bedroom layout at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt88:
+    "Bedroom ceiling fan and closet at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt89:
+    "Sunlit bedroom at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt90:
+    "Long bathroom vanity and mirror at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt91:
+    "Kitchen exit door at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt92:
+    "Courtyard view from balcony at La Prada Place Apartment Homes in Dallas Texas",
+
+  gallery_alt93:
+    "Covered patio exterior nook at La Prada Place Apartment Homes in Dallas Texas",
 
   amenities1: "/images/amenities/1.webp",
   amenities2: "/images/amenities/2.webp",
@@ -296,6 +550,10 @@ export const images = {
   // FLOOR PLAN IMAGES
   // ==============================
 
+  // ==============================
+  // FLOOR PLAN IMAGES
+  // ==============================
+
   floor1: "/images/plan/1/1.webp",
   floor2: "/images/plan/1/2.webp",
   floor3: "/images/plan/1/3.webp",
@@ -303,6 +561,10 @@ export const images = {
   floor5: "/images/plan/2/1.webp",
   floor6: "/images/plan/2/2.webp",
   floor7: "/images/plan/2/3.webp",
+
+  // ==============================
+  // FLOOR PLAN ALT TEXT
+  // ==============================
 
   floor_alt1:
     "Plan A1 one-bedroom apartment floor plan at La Prada Place Apartment Homes",
@@ -321,6 +583,9 @@ export const images = {
 
   floor_alt6:
     "Plan B2 two-bedroom apartment floor plan at La Prada Place Apartment Homes",
+
+  floor_alt7:
+    "Plan B2U upgraded two-bedroom apartment floor plan at La Prada Place Apartment Homes",
 
   // ==============================
   // BLOG IMAGES
@@ -373,7 +638,7 @@ export const siteConfig = {
   propertyManagerEmail: "Lprmanager@livenjoymgt.com",
 
   hours: "Mon–Fri: 8:30 AM – 5:30 PM",
-  hours1: "Sat: 10:00 AM – 4:00 PM",
+  hours1: "Sat: 10:00 AM – 5:00 PM",
 
   website: "https://www.leaselapradaapartments.com",
 
@@ -388,7 +653,7 @@ export const units = [
   {
     name: "A1",
     type: "1 Bedroom",
-    price: "$995/mo",
+    price: "$1,025/mo",
     area: "768 sq ft",
     available: "Available",
   },
@@ -412,15 +677,7 @@ export const units = [
   {
     name: "B1",
     type: "2 Bedrooms",
-    price: "$1,325/mo",
-    area: "952 sq ft",
-    available: "Available",
-  },
-
-  {
-    name: "B1 Upgraded",
-    type: "2 Bedrooms",
-    price: "$1,375/mo",
+    price: "$1,200/mo",
     area: "952 sq ft",
     available: "Available",
   },
@@ -428,15 +685,7 @@ export const units = [
   {
     name: "B2",
     type: "2 Bedrooms",
-    price: "$1,445/mo",
-    area: "1,026 sq ft",
-    available: "Available",
-  },
-
-  {
-    name: "B2 Upgraded",
-    type: "2 Bedrooms",
-    price: "$1,545/mo",
+    price: "$1,395/mo",
     area: "1,026 sq ft",
     available: "Available",
   },
@@ -479,7 +728,7 @@ export const footerLocation = [
 export const lookLeaseSpecial = {
   id: "look",
   badge: "LOOK & LEASE SPECIAL",
-  text: "Special Promotion - 1 Month Free! 1BR from $1,025 · 2BR from $1,200",
+  text: "Special Huge Leasing Specials! Act fast for our best rates!",
 };
 
 // ======================================================
@@ -556,7 +805,7 @@ export const leasePortalConfig = {
       code: "A1",
       label: "1 BR · 1 BA",
       area: "768 sq ft",
-      price: "$995/mo",
+      price: "$1,025/mo",
       beds: 1,
     },
 
@@ -580,15 +829,7 @@ export const leasePortalConfig = {
       code: "B1",
       label: "2 BR · 1 BA",
       area: "952 sq ft",
-      price: "$1,325/mo",
-      beds: 2,
-    },
-
-    {
-      code: "B1U",
-      label: "2 BR · 1 BA · Upgraded",
-      area: "952 sq ft",
-      price: "$1,375/mo",
+      price: "$1,200/mo",
       beds: 2,
     },
 
@@ -596,15 +837,7 @@ export const leasePortalConfig = {
       code: "B2",
       label: "2 BR · 2 BA",
       area: "1,026 sq ft",
-      price: "$1,445/mo",
-      beds: 2,
-    },
-
-    {
-      code: "B2U",
-      label: "2 BR · 2 BA · Upgraded",
-      area: "1,026 sq ft",
-      price: "$1,545/mo",
+      price: "$1,395/mo",
       beds: 2,
     },
   ],
@@ -623,8 +856,8 @@ export const leasePortalConfig = {
 
   unitTabs: {
     all: "All Homes",
-    "1bed": "$999/mo",
-    "2bed": "$1,475/mo",
+    "1bed": "$1,025/mo",
+    "2bed": "$1,395/mo",
   },
 
   availabilityText:
@@ -658,7 +891,7 @@ export const PromoCardWidgetConfig = {
 
   buttonText: "Apply Now",
 
-  applyLink: "https://livenjoy.myresman.com/Portal/Applicants/New/VGA?a=1588",
+  applyLink: "https://livenjoy.myresman.com/Portal/Applicants/New/LPP?a=1588",
 };
 
 // ======================================================
@@ -746,11 +979,6 @@ export const homePageConfig = {
     "Private Garages Available*",
     "24-Hour Emergency Maintenance",
     "Close to DART Bus Line",
-    "Resident Lounge",
-    "BBQ Grilling Pavilion",
-    "Scenic Walking & Nature Trails",
-    "Sunrooms*",
-    "Gated Community Access",
   ],
 
   keyDestinations: [
@@ -846,9 +1074,6 @@ export const homePageConfig = {
 
     // Parks & Recreation
     "White Rock Lake",
-
-    // Community
-    "La Prada Place Apartment Homes",
   ],
 
   locationAreas: ["East Dallas", "Mesquite Area", "Dallas Area"],
@@ -972,7 +1197,7 @@ export const homePageConfig = {
 export const plans = {
   A1: {
     title: "Plan A1 · 1 Bedroom · 1 Bath",
-    price: "$995/mo",
+    price: "$1,025/mo",
     area: "768 sq ft",
     img: images.floor1,
     bed: "1 Bedroom",
@@ -999,66 +1224,44 @@ export const plans = {
 
   B1: {
     title: "Plan B1 · 2 Bedrooms · 1 Bath",
-    price: "$1,325/mo",
+    price: "$1,200/mo",
     area: "952 sq ft",
     img: images.floor4,
     bed: "2 Bedrooms",
     bath: "1 Bath",
   },
 
-  B1U: {
-    title: "Plan B1U · 2 Bedrooms · 1 Bath",
-    price: "$1,375/mo",
-    area: "952 sq ft",
-    img: images.floor5,
-    bed: "2 Bedrooms",
-    bath: "1 Bath",
-  },
-
   B2: {
     title: "Plan B2 · 2 Bedrooms · 2 Baths",
-    price: "$1,445/mo",
+    price: "$1,395/mo",
     area: "1,026 sq ft",
     img: images.floor6,
-    bed: "2 Bedrooms",
-    bath: "2 Baths",
-  },
-
-  B2U: {
-    title: "Plan B2U · 2 Bedrooms · 2 Baths",
-    price: "$1,545/mo",
-    area: "1,026 sq ft",
-    img: images.floor7,
     bed: "2 Bedrooms",
     bath: "2 Baths",
   },
 };
 
 export const interiorPhotos = {
-  "Living Room": images.gallery11,
-  Bedroom: images.gallery28,
-  Kitchen: images.gallery13,
-  Bathroom: images.gallery27,
+  "Living Room": images.gallery36,
+  Bedroom: images.gallery33,
+  Kitchen: images.gallery55,
+  Bathroom: images.gallery65,
 } as const;
 
 export const amenityPhotos = {
-  Pool: images.gallery7,
-  Parking: images.gallery34,
-  "Dog Park": images.gallery33,
-  Gym: images.gallery6,
+  Pool: images.gallery21,
+  Parking: images.gallery15,
+  Clubhouse: images.gallery8,
+  "Sunroom & Patio": images.gallery20,
 } as const;
 
-export const defaultPreviewImg = images.home14;
+export const defaultPreviewImg = images.gallery20;
 
 export type PlanKey = keyof typeof plans;
 
-export type PreviewCategory =
-  | "Living Room"
-  | "Bedroom"
-  | "Kitchen"
-  | "Bathroom";
+export type PreviewCategory = keyof typeof interiorPhotos;
 
-export type AmenityCategory = "Pool" | "Parking" | "Dog Park" | "Gym";
+export type AmenityCategory = keyof typeof amenityPhotos;
 
 // ======================================================
 // FLOOR PLANS
@@ -1089,7 +1292,7 @@ export const floorPlans: FloorPlan[] = [
     beds: "1 Bedroom",
     baths: "1 Bath",
     area: "768",
-    price: "$995/mo",
+    price: "$1,025/mo",
     available: "1 Unit Available",
     popular: false,
     tags: [
@@ -1102,7 +1305,7 @@ export const floorPlans: FloorPlan[] = [
     ],
     images: [images.floor1],
     interiorImages: [images.home10, images.home11, images.home12],
-    tour: "https://www.google.com/maps/search/?api=1&query=8383+La+Prada+Dr+Dallas+TX+75228",
+    tour: "https://my.matterport.com/show/?model=pTikpEmdTkg&play=1",
   },
 
   {
@@ -1115,7 +1318,7 @@ export const floorPlans: FloorPlan[] = [
     area: "818",
     price: "$1,045/mo",
     available: "1 Unit Available",
-    popular: false,
+    popular: true,
     tags: [
       "1 Bedroom",
       "1 Bathroom",
@@ -1126,7 +1329,7 @@ export const floorPlans: FloorPlan[] = [
     ],
     images: [images.floor2],
     interiorImages: [images.home13, images.home14, images.home15],
-    tour: "https://www.google.com/maps/search/?api=1&query=8383+La+Prada+Dr+Dallas+TX+75228",
+    tour: "https://my.matterport.com/show/?model=Q4LuksqDWrU&play=1",
   },
 
   {
@@ -1150,7 +1353,7 @@ export const floorPlans: FloorPlan[] = [
     ],
     images: [images.floor3],
     interiorImages: [images.home16, images.home17, images.home18],
-    tour: "https://www.google.com/maps/search/?api=1&query=8383+La+Prada+Dr+Dallas+TX+75228",
+    tour: "",
   },
 
   {
@@ -1161,7 +1364,7 @@ export const floorPlans: FloorPlan[] = [
     beds: "2 Bedrooms",
     baths: "1 Bath",
     area: "952",
-    price: "$1,325/mo",
+    price: "$1,200/mo",
     available: "1 Unit Available",
     popular: true,
     tags: [
@@ -1174,31 +1377,7 @@ export const floorPlans: FloorPlan[] = [
     ],
     images: [images.floor4],
     interiorImages: [images.gallery19, images.gallery20, images.gallery21],
-    tour: "https://www.google.com/maps/search/?api=1&query=8383+La+Prada+Dr+Dallas+TX+75228",
-  },
-
-  {
-    series: "B-SERIES",
-    title: "Plan B1U",
-    description:
-      "An upgraded two-bedroom residence offering comfortable living space and contemporary touches.",
-    beds: "2 Bedrooms",
-    baths: "1 Bath",
-    area: "952",
-    price: "$1,375/mo",
-    available: "1 Unit Available",
-    popular: false,
-    tags: [
-      "Upgraded Interior",
-      "2 Bedrooms",
-      "1 Bathroom",
-      "Spacious Layout",
-      "Private Patio",
-      "+2 more",
-    ],
-    images: [images.floor5],
-    interiorImages: [images.gallery22, images.gallery23, images.gallery24],
-    tour: "https://www.google.com/maps/search/?api=1&query=8383+La+Prada+Dr+Dallas+TX+75228",
+    tour: "",
   },
 
   {
@@ -1209,7 +1388,7 @@ export const floorPlans: FloorPlan[] = [
     beds: "2 Bedrooms",
     baths: "2 Baths",
     area: "1,026",
-    price: "$1,445/mo",
+    price: "$1,395/mo",
     available: "1 Unit Available",
     popular: false,
     tags: [
@@ -1222,31 +1401,7 @@ export const floorPlans: FloorPlan[] = [
     ],
     images: [images.floor6],
     interiorImages: [images.gallery25, images.gallery26, images.gallery27],
-    tour: "https://www.google.com/maps/search/?api=1&query=8383+La+Prada+Dr+Dallas+TX+75228",
-  },
-
-  {
-    series: "B-SERIES",
-    title: "Plan B2U",
-    description:
-      "An upgraded two-bedroom, two-bathroom residence offering spacious living areas and enhanced interior finishes.",
-    beds: "2 Bedrooms",
-    baths: "2 Baths",
-    area: "1,026",
-    price: "$1,545/mo",
-    available: "1 Unit Available",
-    popular: true,
-    tags: [
-      "Upgraded Interior",
-      "2 Bedrooms",
-      "2 Bathrooms",
-      "Spacious Layout",
-      "Private Patio",
-      "+2 more",
-    ],
-    images: [images.floor7],
-    interiorImages: [images.gallery28, images.gallery29, images.gallery30],
-    tour: "https://www.google.com/maps/search/?api=1&query=8383+La+Prada+Dr+Dallas+TX+75228",
+    tour: "",
   },
 ];
 // ======================================================
@@ -1263,215 +1418,577 @@ export type GalleryItem = {
 };
 
 export const gallery: GalleryItem[] = [
+  // ==============================
+  // 1–7 · EXTERIORS
+  // ==============================
+
   {
-    src: images.home1,
-    name: "",
-    alt: "",
+    src: images.gallery1,
+    name: "Community Aerial View",
+    alt: "Community aerial view at La Prada Place Apartment Homes",
     category: "Exteriors",
   },
   {
-    src: images.home2,
-    name: "",
-    alt: "",
-    category: "Interiors",
+    src: images.gallery2,
+    name: "Gated Entrance & Flags",
+    alt: "Gated entrance and flags at La Prada Place Apartment Homes",
+    category: "Exteriors",
   },
   {
-    src: images.home3,
-    name: "",
-    alt: "",
-    category: "Interiors",
+    src: images.gallery3,
+    name: "Residential Buildings Aerial",
+    alt: "Aerial view of residential buildings at La Prada Place Apartment Homes",
+    category: "Exteriors",
   },
   {
-    src: images.home4,
-    name: "",
-    alt: "",
-    category: "Interiors",
+    src: images.gallery4,
+    name: "Parking Lot & Community Entry",
+    alt: "Parking lot and community entry at La Prada Place Apartment Homes",
+    category: "Exteriors",
   },
   {
-    src: images.home5,
-    name: "",
-    alt: "",
-    category: "Interiors",
+    src: images.gallery5,
+    name: "Leasing Office Parking Entrance",
+    alt: "Leasing office parking entrance at La Prada Place Apartment Homes",
+    category: "Exteriors",
   },
   {
-    src: images.home6,
-    name: "",
-    alt: "",
-    category: "Interiors",
+    src: images.gallery6,
+    name: "Leasing Center Walkway",
+    alt: "Leasing center walkway at La Prada Place Apartment Homes",
+    category: "Exteriors",
   },
   {
-    src: images.home7,
-    name: "",
-    alt: "",
+    src: images.gallery7,
+    name: "Monument Entry Sign",
+    alt: "Monument entry sign at La Prada Place Apartment Homes",
+    category: "Exteriors",
+  },
+
+  // ==============================
+  // 8–22 · AMENITIES
+  // ==============================
+
+  {
+    src: images.gallery8,
+    name: "Resident Clubhouse Fireplace",
+    alt: "Resident clubhouse fireplace at La Prada Place Apartment Homes",
     category: "Amenities",
   },
   {
-    src: images.home8,
-    name: "",
-    alt: "",
+    src: images.gallery9,
+    name: "Clubhouse Social Lounge",
+    alt: "Clubhouse social lounge at La Prada Place Apartment Homes",
     category: "Amenities",
   },
   {
-    src: images.home9,
-    name: "",
-    alt: "",
+    src: images.gallery10,
+    name: "Resident Seating & TV Area",
+    alt: "Resident seating and TV area at La Prada Place Apartment Homes",
+    category: "Amenities",
+  },
+  {
+    src: images.gallery11,
+    name: "Open Clubhouse Floor Plan",
+    alt: "Open clubhouse floor plan at La Prada Place Apartment Homes",
+    category: "Amenities",
+  },
+  {
+    src: images.gallery12,
+    name: "Clubhouse Reception Hall",
+    alt: "Clubhouse reception hall at La Prada Place Apartment Homes",
+    category: "Amenities",
+  },
+  {
+    src: images.gallery13,
+    name: "Resident Coffee Bar & Island",
+    alt: "Resident coffee bar and island at La Prada Place Apartment Homes",
+    category: "Amenities",
+  },
+  {
+    src: images.gallery14,
+    name: "Kitchenette & Social Bar",
+    alt: "Kitchenette and social bar at La Prada Place Apartment Homes",
+    category: "Amenities",
+  },
+  {
+    src: images.gallery15,
+    name: "Resident Covered Parking",
+    alt: "Resident covered parking at La Prada Place Apartment Homes",
+    category: "Amenities",
+  },
+  {
+    src: images.gallery16,
+    name: "Clubhouse Entry & Foyer",
+    alt: "Clubhouse entry and foyer at La Prada Place Apartment Homes",
+    category: "Amenities",
+  },
+  {
+    src: images.gallery17,
+    name: "Clubhouse Fireplace Hearth",
+    alt: "Clubhouse fireplace hearth at La Prada Place Apartment Homes",
+    category: "Amenities",
+  },
+  {
+    src: images.gallery18,
+    name: "Sunlit Clubhouse Seating",
+    alt: "Sunlit clubhouse seating at La Prada Place Apartment Homes",
+    category: "Amenities",
+  },
+  {
+    src: images.gallery19,
+    name: "Resident Lounge French Doors",
+    alt: "Resident lounge with French doors at La Prada Place Apartment Homes",
+    category: "Amenities",
+  },
+  {
+    src: images.gallery20,
+    name: "Covered Patio Sunroom",
+    alt: "Covered patio sunroom at La Prada Place Apartment Homes",
+    category: "Amenities",
+  },
+  {
+    src: images.gallery21,
+    name: "Resort-Style Swimming Pool",
+    alt: "Resort-style swimming pool at La Prada Place Apartment Homes",
+    category: "Amenities",
+  },
+  {
+    src: images.gallery22,
+    name: "Pool Deck & Sundeck",
+    alt: "Pool deck and sundeck at La Prada Place Apartment Homes",
+    category: "Amenities",
+  },
+
+  // ==============================
+  // 23–93 · INTERIORS
+  // ==============================
+
+  {
+    src: images.gallery23,
+    name: "Apartment Entry Hallway",
+    alt: "Apartment entry hallway at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home10,
-    name: "",
-    alt: "",
+    src: images.gallery24,
+    name: "Living Room with Fireplace",
+    alt: "Living room with fireplace at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home11,
-    name: "",
-    alt: "",
+    src: images.gallery25,
+    name: "Sunlit Living & Dining Room",
+    alt: "Sunlit living and dining room at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home12,
-    name: "",
-    alt: "",
+    src: images.gallery26,
+    name: "Living Area with Picture Windows",
+    alt: "Living area with picture windows at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home13,
-    name: "",
-    alt: "",
+    src: images.gallery27,
+    name: "Contemporary Galley Kitchen",
+    alt: "Contemporary galley kitchen at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home14,
-    name: "",
-    alt: "",
+    src: images.gallery28,
+    name: "Kitchen & Direct Patio Access",
+    alt: "Kitchen with direct patio access at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home15,
-    name: "",
-    alt: "",
+    src: images.gallery29,
+    name: "Modern Bathroom Vanity & Tub",
+    alt: "Modern bathroom vanity and tub at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home16,
-    name: "",
-    alt: "",
+    src: images.gallery30,
+    name: "Extended Double-Sink Vanity",
+    alt: "Extended double-sink vanity at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home17,
-    name: "",
-    alt: "",
+    src: images.gallery31,
+    name: "Primary Bedroom with Ceiling Fan",
+    alt: "Primary bedroom with ceiling fan at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home18,
-    name: "",
-    alt: "",
+    src: images.gallery32,
+    name: "Bedroom Suite & Closet",
+    alt: "Bedroom suite and closet at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home19,
-    name: "",
-    alt: "",
+    src: images.gallery33,
+    name: "Spacious Secondary Bedroom",
+    alt: "Spacious secondary bedroom at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home20,
-    name: "",
-    alt: "",
+    src: images.gallery34,
+    name: "Bedroom Corner Windows",
+    alt: "Bedroom corner windows at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home21,
-    name: "",
-    alt: "",
+    src: images.gallery35,
+    name: "Vaulted Ceiling Living Room",
+    alt: "Vaulted ceiling living room at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home22,
-    name: "",
-    alt: "",
+    src: images.gallery36,
+    name: "Townhome Living Room & Stairs",
+    alt: "Townhome living room and stairs at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home23,
-    name: "",
-    alt: "",
+    src: images.gallery37,
+    name: "Open Living Area with Picture Window",
+    alt: "Open living area with picture window at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home24,
-    name: "",
-    alt: "",
+    src: images.gallery38,
+    name: "Vaulted Ceiling Fireplace",
+    alt: "Vaulted ceiling fireplace at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home25,
-    name: "",
-    alt: "",
+    src: images.gallery39,
+    name: "Upgraded Kitchen Black Appliances",
+    alt: "Upgraded kitchen with black appliances at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home26,
-    name: "",
-    alt: "",
+    src: images.gallery40,
+    name: "Kitchen Counter & Breakfast Bar",
+    alt: "Kitchen counter and breakfast bar at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home27,
-    name: "",
-    alt: "",
+    src: images.gallery41,
+    name: "Modern Vanity & Linen Storage",
+    alt: "Modern vanity and linen storage at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home28,
-    name: "",
-    alt: "",
+    src: images.gallery42,
+    name: "Primary Bedroom Corner View",
+    alt: "Primary bedroom corner view at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home29,
-    name: "",
-    alt: "",
+    src: images.gallery43,
+    name: "Bedroom & Sliding Closet",
+    alt: "Bedroom and sliding closet at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home30,
-    name: "",
-    alt: "",
+    src: images.gallery44,
+    name: "Bedroom Dual Mirrored Closets",
+    alt: "Bedroom with dual mirrored closets at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home31,
-    name: "",
-    alt: "",
+    src: images.gallery45,
+    name: "Second Bedroom Ceiling Fan",
+    alt: "Second bedroom with ceiling fan at La Prada Place Apartment Homes",
     category: "Interiors",
   },
   {
-    src: images.home32,
-    name: "",
-    alt: "",
+    src: images.gallery46,
+    name: "Private Balcony Screened Porch",
+    alt: "Private balcony screened porch at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery47,
+    name: "Balcony Storage & Green Views",
+    alt: "Balcony storage and green views at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery48,
+    name: "Extended Covered Balcony",
+    alt: "Extended covered balcony at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery49,
+    name: "Private Front Entry Foyer",
+    alt: "Private front entry foyer at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery50,
+    name: "Wood-Style Living Room & Fireplace",
+    alt: "Wood-style living room and fireplace at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery51,
+    name: "Spacious Open Concept Living",
+    alt: "Spacious open concept living area at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery52,
+    name: "Open Living & Dining Concept",
+    alt: "Open living and dining concept at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery53,
+    name: "Living Area Foyer View",
+    alt: "Living area foyer view at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery54,
+    name: "Living Room French Door Access",
+    alt: "Living room French door access at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery55,
+    name: "Classic White Kitchen",
+    alt: "Classic white kitchen at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery56,
+    name: "Kitchen Double Sink & Counters",
+    alt: "Kitchen double sink and counters at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery57,
+    name: "Bright Galley Kitchen",
+    alt: "Bright galley kitchen at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery58,
+    name: "Kitchen Entry & Refrigerator",
+    alt: "Kitchen entry and refrigerator at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery59,
+    name: "Full-Size Washer & Dryer Hookups",
+    alt: "Full-size washer and dryer hookups at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery60,
+    name: "Bedroom Window & Ceiling Fan",
+    alt: "Bedroom window and ceiling fan at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery61,
+    name: "Bedroom Hallway Entry",
+    alt: "Bedroom hallway entry at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery62,
+    name: "Bedroom Suite Dressing Area",
+    alt: "Bedroom suite dressing area at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery63,
+    name: "Bedroom Walk-In Closet Nook",
+    alt: "Bedroom walk-in closet nook at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery64,
+    name: "Contemporary White Vanity",
+    alt: "Contemporary white vanity at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery65,
+    name: "Full Bathroom & Tub Surround",
+    alt: "Full bathroom and tub surround at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery66,
+    name: "Bedroom Double Closets",
+    alt: "Bedroom with double closets at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery67,
+    name: "Bedroom Layout & Sliding Doors",
+    alt: "Bedroom layout and sliding doors at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery68,
+    name: "Bright Corner Bedroom",
+    alt: "Bright corner bedroom at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery69,
+    name: "Sunlit Secondary Bedroom",
+    alt: "Sunlit secondary bedroom at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery70,
+    name: "Covered Private Patio",
+    alt: "Covered private patio at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery71,
+    name: "Enclosed Patio Storage",
+    alt: "Enclosed patio storage at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery72,
+    name: "Second-Floor Private Balcony",
+    alt: "Second-floor private balcony at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery73,
+    name: "Outdoor Storage Closet",
+    alt: "Outdoor storage closet at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery74,
+    name: "Interior Unit Entryway",
+    alt: "Interior unit entryway at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery75,
+    name: "Townhome Living Area & Kitchen Pass",
+    alt: "Townhome living area and kitchen pass at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery76,
+    name: "Living Room Center Fireplace",
+    alt: "Living room center fireplace at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery77,
+    name: "Living Room & Breakfast Bar Nook",
+    alt: "Living room and breakfast bar nook at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery78,
+    name: "Vaulted Ceiling Living Nook",
+    alt: "Vaulted ceiling living nook at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery79,
+    name: "Sunlit Open Living Room",
+    alt: "Sunlit open living room at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery80,
+    name: "Kitchen Breakfast Bar & Cabinets",
+    alt: "Kitchen breakfast bar and cabinets at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery81,
+    name: "Kitchen Layout & Patio Door",
+    alt: "Kitchen layout and patio door at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery82,
+    name: "Hallway to Bedrooms & Bath",
+    alt: "Hallway to bedrooms and bath at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery83,
+    name: "Full Bathroom Vanity & Mirror",
+    alt: "Full bathroom vanity and mirror at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery84,
+    name: "Large Double-Sink Bath Vanity",
+    alt: "Large double-sink bath vanity at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery85,
+    name: "Walk-In Closet Built-In Shelving",
+    alt: "Walk-in closet with built-in shelving at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery86,
+    name: "Primary Bedroom with En-Suite Entry",
+    alt: "Primary bedroom with en-suite entry at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery87,
+    name: "Spacious Bedroom Layout",
+    alt: "Spacious bedroom layout at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery88,
+    name: "Bedroom Ceiling Fan & Closet",
+    alt: "Bedroom ceiling fan and closet at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery89,
+    name: "Sunlit Bedroom",
+    alt: "Sunlit bedroom at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery90,
+    name: "Long Bathroom Vanity & Mirror",
+    alt: "Long bathroom vanity and mirror at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery91,
+    name: "Kitchen Exit Door",
+    alt: "Kitchen exit door at La Prada Place Apartment Homes",
+    category: "Interiors",
+  },
+  {
+    src: images.gallery92,
+    name: "Courtyard View from Balcony",
+    alt: "Courtyard view from balcony at La Prada Place Apartment Homes",
     category: "Exteriors",
   },
   {
-    src: images.home33,
-    name: "",
-    alt: "",
+    src: images.gallery93,
+    name: "Covered Patio Exterior Nook",
+    alt: "Covered patio exterior nook at La Prada Place Apartment Homes",
     category: "Exteriors",
-  },
-  {
-    src: images.home34,
-    name: "",
-    alt: "",
-    category: "Neighborhood",
-  },
-  {
-    src: images.home35,
-    name: "",
-    alt: "",
-    category: "Interiors",
   },
 ];
 
@@ -1503,7 +2020,7 @@ export const posts: Post[] = [
     author: "La Prada Place Team",
     date: "Aug 15, 2026",
 
-    title: "Exploring Bear Creek Greenbelt & Local Euless Parks",
+    title: "Exploring Bear Creek Greenbelt & Local Dallas Parks",
 
     description:
       "Plan your morning run, dog walks, or sunny weekend picnic along the scenic Bear Creek trails and surrounding parks.",
@@ -1511,7 +2028,7 @@ export const posts: Post[] = [
     img: images.blog2,
 
     content: [
-      "One of the great advantages of living at La Prada Place Apartment Homes is having opportunities to enjoy the outdoors close to home. From walking trails and neighborhood parks to peaceful green spaces, the Euless area offers plenty of ways to spend time outside.",
+      "One of the great advantages of living at La Prada Place Apartment Homes is having opportunities to enjoy the outdoors close to home. From walking trails and neighborhood parks to peaceful green spaces, the Dallas area offers plenty of ways to spend time outside.",
 
       "Little Bear Creek Trails provides a convenient opportunity to get outside, enjoy a walk, and experience the natural surroundings near the community. The trail network connects several local parks and offers an easy way to add outdoor recreation to your everyday routine.",
 
@@ -1536,13 +2053,13 @@ export const posts: Post[] = [
     img: images.blog3,
 
     content: [
-      "Living in Euless puts you within convenient reach of shopping, dining, recreation, and entertainment throughout the DFW Mid-Cities area.",
+      "Living in Dallas puts you within convenient reach of shopping, dining, recreation, and entertainment throughout the DFW Mid-Cities area.",
 
       "Glade Parks and surrounding destinations provide opportunities to enjoy retail shopping, restaurants, outdoor spaces, and entertainment for a relaxed weekend close to home.",
 
       "Whether you're planning a casual afternoon with friends, looking for a place to shop, or searching for a new restaurant to try, the surrounding Mid-Cities area offers plenty of choices.",
 
-      "La Prada Place Apartment Homes provides a convenient home base for exploring Euless and the broader DFW area while returning to a comfortable community at the end of the day.",
+      "La Prada Place Apartment Homes provides a convenient home base for exploring Dallas and the broader DFW area while returning to a comfortable community at the end of the day.",
     ],
   },
 
@@ -1556,12 +2073,12 @@ export const posts: Post[] = [
     title: "An Insider’s Look at Life Around Bear Creek",
 
     description:
-      "Discover how our quiet, tree-lined neighborhood offers the perfect balance of suburban retreat and easy connections to Euless and the DFW area.",
+      "Discover how our quiet, tree-lined neighborhood offers the perfect balance of suburban retreat and easy connections to Dallas and the DFW area.",
 
     img: images.blog4,
 
     content: [
-      "La Prada Place Apartment Homes offers a comfortable residential setting for residents who appreciate a quieter neighborhood while staying connected to everything Euless and the DFW area have to offer.",
+      "La Prada Place Apartment Homes offers a comfortable residential setting for residents who appreciate a quieter neighborhood while staying connected to everything Dallas and the DFW area have to offer.",
 
       "The Bear Creek area combines residential surroundings with convenient access to parks, trails, dining, shopping, and everyday services.",
 
@@ -1581,18 +2098,18 @@ export const posts: Post[] = [
     title: "Coffee Shops & Casual Bites Near Fuller Wiser",
 
     description:
-      "We break down neighborhood favorites for weekend brunch, cozy specialty coffee shops, and quick casual bites around Euless and Fuller Wiser.",
+      "We break down neighborhood favorites for weekend brunch, cozy specialty coffee shops, and quick casual bites around Dallas and Fuller Wiser.",
 
     img: images.blog5,
 
     content: [
       "A good neighborhood is about more than convenience. Local cafés and casual restaurants provide comfortable places to start the morning, meet friends, or enjoy a relaxed meal.",
 
-      "The Fuller Wiser area and surrounding Euless neighborhoods offer a variety of places to discover, from coffee shops and casual breakfast spots to convenient restaurants for lunch and dinner.",
+      "The Fuller Wiser area and surrounding Dallas neighborhoods offer a variety of places to discover, from coffee shops and casual breakfast spots to convenient restaurants for lunch and dinner.",
 
       "Exploring local cafés is also an easy way to make your weekends more enjoyable. Grab a coffee, meet a friend for brunch, or find a new favorite spot close to home.",
 
-      "With La Prada Place Apartment Homes as your home base, discovering local coffee shops and casual dining destinations can become part of your everyday Euless lifestyle.",
+      "With La Prada Place Apartment Homes as your home base, discovering local coffee shops and casual dining destinations can become part of your everyday Dallas lifestyle.",
     ],
   },
 
@@ -1606,12 +2123,12 @@ export const posts: Post[] = [
     title: "Weekend Getaways: Lake Grapevine to DFW Nature Hubs",
 
     description:
-      "Spend an afternoon on the water or explore lakeside nature preserves and outdoor destinations with a convenient trip from Euless.",
+      "Spend an afternoon on the water or explore lakeside nature preserves and outdoor destinations with a convenient trip from Dallas.",
 
     img: images.blog6,
 
     content: [
-      "Living in Euless provides access to a wide range of outdoor destinations throughout the DFW area. When the weekend arrives, residents can explore parks, lakes, trails, and other places to enjoy time outside.",
+      "Living in Dallas provides access to a wide range of outdoor destinations throughout the DFW area. When the weekend arrives, residents can explore parks, lakes, trails, and other places to enjoy time outside.",
 
       "Lake Grapevine and other nearby nature destinations offer opportunities for outdoor recreation, relaxing by the water, walking, and enjoying the surrounding scenery.",
 
