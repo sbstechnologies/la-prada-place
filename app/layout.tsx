@@ -9,6 +9,8 @@ import "@/app/globals.css";
 
 import DisableInspect from "@/app/components/DisableInspect";
 import SmoothScroll from "@/app/components/SmoothScroll";
+import CookieConsent from "@/app/components/CookieConsent";
+import Script from "next/script";
 
 /* =========================================================
    SITE CONFIG
@@ -41,6 +43,8 @@ const ZIP = process.env.NEXT_PUBLIC_ZIP ?? "75228";
 const FULL_ADDRESS = `${ADDRESS}, ${CITY}, ${STATE} ${ZIP}`;
 
 const OG_IMAGE = `${SITE_URL}/images/og-image.jpg`;
+
+const clarityId = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID;
 
 /* =========================================================
    DISPLAY FONT
@@ -316,7 +320,11 @@ const apartmentSchema = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={instrumentSerif.variable}>
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      className={instrumentSerif.variable}
+    >
       <body className="min-h-screen font-sans antialiased">
         {/* =================================================
             GOOGLE TAG MANAGER
@@ -327,12 +335,28 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
           )}
 
+        {clarityId && (
+          <Script id="microsoft-clarity" strategy="afterInteractive">
+            {`
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);
+                t.async=1;
+                t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];
+                y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "${clarityId}");
+            `}
+          </Script>
+        )}
+
         {/* =================================================
             STRUCTURED DATA
         ================================================= */}
-
-        <script
+        {/* Structured Data */}
+        <Script
           type="application/ld+json"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(apartmentSchema).replace(/</g, "\\u003c"),
           }}
@@ -344,11 +368,20 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         {process.env.NODE_ENV === "production" && <DisableInspect />}
 
+        <Script
+          id="rentbamboo-charles"
+          src="https://charles.rentbamboo.com/w"
+          data-client-id="bamboo_h5cmconq"
+          data-position="right"
+          data-color="#1E3872"
+        />
+
         {/* =================================================
             SMOOTH SCROLL
         ================================================= */}
 
         <SmoothScroll />
+        <CookieConsent />
 
         {/* =================================================
             APPLICATION
