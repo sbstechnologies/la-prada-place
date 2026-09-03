@@ -2018,7 +2018,7 @@ export const posts: Post[] = [
     readTime: "6 min",
     initials: "LP",
     author: "La Prada Place Team",
-    date: "Aug 15, 2026",
+    date: "",
 
     title: "Exploring Bear Creek Greenbelt & Local Dallas Parks",
 
@@ -2043,7 +2043,7 @@ export const posts: Post[] = [
     readTime: "3 min",
     initials: "LP",
     author: "La Prada Place Team",
-    date: "Aug 10, 2026",
+    date: "",
 
     title: "Weekend Guide to Glade Parks & DFW Mid-Cities",
 
@@ -2068,7 +2068,7 @@ export const posts: Post[] = [
     readTime: "5 min",
     initials: "LP",
     author: "La Prada Place Team",
-    date: "Aug 5, 2026",
+    date: "",
 
     title: "An Insider’s Look at Life Around Bear Creek",
 
@@ -2093,7 +2093,7 @@ export const posts: Post[] = [
     readTime: "7 min",
     initials: "LP",
     author: "La Prada Place Team",
-    date: "Jul 30, 2026",
+    date: "",
 
     title: "Coffee Shops & Casual Bites Near Fuller Wiser",
 
@@ -2118,7 +2118,7 @@ export const posts: Post[] = [
     readTime: "4 min",
     initials: "LP",
     author: "La Prada Place Team",
-    date: "Jul 25, 2026",
+    date: "",
 
     title: "Weekend Getaways: Lake Grapevine to DFW Nature Hubs",
 
@@ -2147,7 +2147,7 @@ export const featuredPost: Post = {
   readTime: "5 min",
   initials: "LP",
   author: "La Prada Place Team",
-  date: "Aug 20, 2026",
+  date: "",
 
   title: "Discover Local Life Around La Prada Place Apartment Homes",
 
@@ -2185,7 +2185,7 @@ export const articles = [
     authorInitials: "LP",
     authorBg: "bg-[#E09428]/10 text-[#E09428]",
     authorName: "La Prada Place Team",
-    date: "Aug 20",
+    date: "",
     title: "Must-Try Dining & Local Flavors in East Dallas",
     description:
       "Discover local restaurants, cafés, casual dining, and flavorful destinations around East Dallas, with plenty of options close to La Prada Place.",
@@ -2200,7 +2200,7 @@ export const articles = [
     authorInitials: "LP",
     authorBg: "bg-[#2a5a8f]/10 text-[#2a5a8f]",
     authorName: "La Prada Place Team",
-    date: "Aug 15",
+    date: "",
     title: "Exploring White Rock Lake & East Dallas Greenbelts",
     description:
       "Explore scenic trails, waterfront recreation, green spaces, and relaxing outdoor destinations around White Rock Lake and East Dallas.",
@@ -2215,7 +2215,7 @@ export const articles = [
     authorInitials: "LP",
     authorBg: "bg-[#1E3872]/10 text-[#1E3872]",
     authorName: "La Prada Place Team",
-    date: "Aug 10",
+    date: "",
     title: "Weekend Shopping & Entertainment at Town East",
     description:
       "Plan your weekend with shopping, dining, entertainment, and everyday conveniences at Town East Mall and the surrounding retail hub.",
@@ -2230,7 +2230,7 @@ export const articles = [
     authorInitials: "LP",
     authorBg: "bg-[#E09428]/10 text-[#E09428]",
     authorName: "La Prada Place Team",
-    date: "Aug 5",
+    date: "",
     title: "Discovering Everyday Life in East Dallas",
     description:
       "Explore the neighborhoods, local conveniences, parks, dining, and destinations that make life around La Prada Place easy and connected.",
@@ -2245,7 +2245,7 @@ export const articles = [
     authorInitials: "LP",
     authorBg: "bg-[#2a5a8f]/10 text-[#2a5a8f]",
     authorName: "La Prada Place Team",
-    date: "Jul 30",
+    date: "",
     title: "Coffee, Dining & Local Favorites Near La Prada Place",
     description:
       "Find neighborhood coffee shops, casual restaurants, and local favorites for relaxed mornings, quick meals, and easy evenings close to home.",
@@ -2260,7 +2260,7 @@ export const articles = [
     authorInitials: "LP",
     authorBg: "bg-[#5a3a7a]/10 text-[#5a3a7a]",
     authorName: "La Prada Place Team",
-    date: "Jul 25",
+    date: "",
     title: "Downtown Dallas & East Dallas City Guide",
     description:
       "Discover convenient access to Downtown Dallas, cultural attractions, entertainment, dining, and major destinations from La Prada Place.",
