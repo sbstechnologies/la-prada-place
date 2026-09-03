@@ -109,7 +109,7 @@ export async function POST(req: Request) {
       "info@livenjoymgt.com",
     ];
     if (resident === "Future Resident") {
-      toRecipients.push("sbstechnololgies.in@gmail.com");
+      toRecipients.push("la-prada-place@rentbamboo.ai");
     }
 
     const ccRecipients: string[] = [];
