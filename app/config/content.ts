@@ -1,3 +1,88 @@
+// ======================================================
+// SITE CONFIG
+// ======================================================
+
+export const siteConfig = {
+  name: "La Prada Place Apartment Homes",
+  shortName: "La Prada Place",
+
+  address: "8383 La Prada Dr, Dallas, TX 75228",
+
+  phone: "(214) 321-2237",
+  tel: "tel:+12143212237",
+
+  email: "Lprmanager@livenjoymgt.com",
+  propertyManagerEmail: "Lprmanager@livenjoymgt.com",
+
+  hours: "Mon–Fri: 8:30 AM – 5:30 PM",
+  hours1: "Sat: 10:00 AM – 5:00 PM",
+
+  website: "https://www.leaselapradaapartments.com",
+
+  map: "La Prada Place Apartments, 8383 La Prada Dr, Dallas, TX 75228",
+
+  applyLink: "https://livenjoy.myresman.com/Portal/Applicants/New/LPP?a=1588",
+};
+
+export const lookLeaseSpecial = {
+  id: "look",
+  badge: "LOOK & LEASE SPECIAL",
+  text: "1 Month Free Move-In Special! Apply now before this special goes away!",
+};
+
+export const floorPlansSpecial = {
+  id: "floor-plans-special",
+  badge: "LOOK & LEASE SPECIAL",
+  headline: "Special Promotion - Huge Specials",
+  badges: ["1 Month Free Special", " Must move in by September 30, 2026! "],
+  phone: "(214) 321-2237",
+  tel: "tel:+12143212237",
+};
+
+export const lookLeaseOffer = {
+  id: "look-lease-offer",
+  tagline: "LIMITED TIME OFFER",
+  title: "Look & Lease Special",
+  subtext:
+    "Get 1 Month Free on your new home! Act fast to lock in this limited-time rate.",
+  highlight: " Must move in by September 30, 2026 !",
+  buttonText: "Call Now: (214) 321-2237",
+  buttonHref: "tel:+12143212237",
+};
+
+// ======================================================
+// PROMOTION
+// ======================================================
+
+export const PromoCardWidgetConfig = {
+  label: "LIMITED TIME",
+  title: "Special Promotion",
+
+  cards: [
+    {
+      title: "Huge Leasing Specials",
+      text: "",
+      highlight: "1 Month Free!",
+      suffix: "Apply now before this special expires.",
+      theme: "orange",
+    },
+    {
+      title: "Contact Us Today",
+      text: "Call us right now for details.",
+      highlight: "Must move in by September 30, 2026.",
+      suffix: "Restrictions apply",
+      theme: "blue",
+    },
+  ],
+
+  buttonText: "Apply Now",
+
+  applyLink: "https://livenjoy.myresman.com/Portal/Applicants/New/LPP?a=1588",
+
+  phone: "Call us: (214) 321-2237",
+  phoneLink: "tel:+12143212237",
+};
+
 export const images = {
   // ==============================
   // PROPERTY / HOME
@@ -622,30 +707,6 @@ export const images = {
 };
 
 // ======================================================
-// SITE CONFIG
-// ======================================================
-
-export const siteConfig = {
-  name: "La Prada Place Apartment Homes",
-  shortName: "La Prada Place",
-
-  address: "8383 La Prada Dr, Dallas, TX 75228",
-
-  phone: "(214) 321-2237",
-  tel: "tel:+12143212237",
-
-  email: "Lprmanager@livenjoymgt.com",
-  propertyManagerEmail: "Lprmanager@livenjoymgt.com",
-
-  hours: "Mon–Fri: 8:30 AM – 5:30 PM",
-  hours1: "Sat: 10:00 AM – 5:00 PM",
-
-  website: "https://www.leaselapradaapartments.com",
-
-  map: "La Prada Place Apartments, 8383 La Prada Dr, Dallas, TX 75228",
-};
-
-// ======================================================
 // UNITS
 // ======================================================
 
@@ -720,16 +781,6 @@ export const footerLocation = [
     distance: "9.5 miles",
   },
 ];
-
-// ======================================================
-// LEASE SPECIAL
-// ======================================================
-
-export const lookLeaseSpecial = {
-  id: "look",
-  badge: "LOOK & LEASE SPECIAL",
-  text: "Special Huge Leasing Specials! Act fast for our best rates!",
-};
 
 // ======================================================
 // HEADER
@@ -862,36 +913,6 @@ export const leasePortalConfig = {
 
   availabilityText:
     "Prices and availability subject to change · Pets welcome · Call (214) 321-2237",
-};
-
-// ======================================================
-// PROMOTION
-// ======================================================
-
-export const PromoCardWidgetConfig = {
-  label: "Limited Time",
-  title: "Special Promotion",
-
-  cards: [
-    {
-      title: "Huge Leasing Specials",
-      text: "Act fast to lock in our",
-      highlight: "best rates",
-      suffix: "limited availability remaining.",
-      theme: "orange",
-    },
-    {
-      title: "Contact Us Today",
-      text: "",
-      highlight: "Call us right now",
-      suffix: " for full details on current offers. Restrictions apply",
-      theme: "blue",
-    },
-  ],
-
-  buttonText: "Apply Now",
-
-  applyLink: "https://livenjoy.myresman.com/Portal/Applicants/New/LPP?a=1588",
 };
 
 // ======================================================
