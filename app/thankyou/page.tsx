@@ -32,9 +32,9 @@ export default function Contact() {
           </h1>
 
           <p className="mt-8 max-w-2xl font-[Plus_Jakarta_Sans] text-base leading-relaxed text-[#bfc6d6] md:text-lg">
-            Ready to make Western Station your home? Our leasing team is
-            standing by to answer questions, schedule tours, and walk you
-            through the leasing process.
+            Ready to make La Prada your home? Our leasing team is standing by to
+            answer questions, schedule tours, and walk you through the leasing
+            process.
           </p>
         </div>
       </section>
@@ -196,8 +196,7 @@ export default function Contact() {
 
                 <div className="mt-6">
                   <p className="text-sm font-semibold text-gray-700 md:text-xl">
-                    Our Western Station leasing team will quickly reach back to
-                    you!
+                    Our La Prada leasing team will quickly reach back to you!
                   </p>
 
                   <p className="mt-3 text-sm text-gray-500 md:text-base">

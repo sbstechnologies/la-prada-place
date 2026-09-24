@@ -143,9 +143,7 @@ export default function Gallery() {
 
           <h1 className="font-[Instrument_Serif] text-[56px] md:text-[56px] leading-[0.98] tracking-[-0.04em] text-[#F5F2ED]">
             Life at <br />
-            <span className="text-[#E09428] italic">
-              La Prada Place Apartment Homes
-            </span>
+            <span className="text-[#E09428] italic">La Prada Place</span>
           </h1>
 
           <p className="mt-8 text-[#c7c3bd] max-w-xl text-sm md:text-base leading-relaxed">
