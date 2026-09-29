@@ -103,11 +103,7 @@ export async function POST(req: Request) {
       },
     });
 
-    const toRecipients = [
-      "VGLeasing@Livenjoymgt.com",
-      "VGManager@Livenjoymgt.com",
-      "info@livenjoymgt.com",
-    ];
+    const toRecipients = ["Lprmanager@livenjoymgt.com", "info@livenjoymgt.com"];
     if (resident === "Future Resident") {
       toRecipients.push("la-prada-place@rentbamboo.ai");
     }
@@ -115,11 +111,7 @@ export async function POST(req: Request) {
     const ccRecipients: string[] = [];
 
     if (resident === "Current Resident") {
-      ccRecipients.push(
-        "daniel@livenjoymgt.com",
-        "admin@livenjoymgt.com",
-        "officeadmin@livenjoymgt.com",
-      );
+      ccRecipients.push("daniel@livenjoymgt.com", "admin@livenjoymgt.com");
     }
 
     // Verify SMTP connection
@@ -161,7 +153,7 @@ export async function POST(req: Request) {
         opacity:0.9;
       "
     >
-      Village Green of Bear Creek -
+      La Prada Place Apartment Homes -
       A new inquiry has been received from the website
     </p>
   </div>

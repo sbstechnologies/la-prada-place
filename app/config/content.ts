@@ -34,7 +34,7 @@ export const floorPlansSpecial = {
   id: "floor-plans-special",
   badge: "LOOK & LEASE SPECIAL",
   headline: "Special Promotion - Huge Specials",
-  badges: ["1 Month Free Special", " Must move in by September 30, 2026! "],
+  badges: ["1 Month Free Special", " Must move in by September 30, 2026!"],
   phone: "(214) 321-2237",
   tel: "tel:+12143212237",
 };
@@ -45,7 +45,7 @@ export const lookLeaseOffer = {
   title: "Look & Lease Special",
   subtext:
     "Get 1 Month Free on your new home! Act fast to lock in this limited-time rate.",
-  highlight: " Must move in by September 30, 2026 !",
+  highlight: " Must move in by September 30, 2026!",
   buttonText: "Call Now: (214) 321-2237",
   buttonHref: "tel:+12143212237",
 };
@@ -1133,7 +1133,7 @@ export const homePageConfig = {
       alt: images.blog_alt1,
       category: "Local Eats",
       time: "4 min",
-      author: "La Prada Team",
+      author: "La Prada Place Team",
       date: "",
       title: "Must-Try Dining & Local Flavors in East Dallas",
       desc: "Discover local favorites, casual dining, and flavorful spots around East Dallas, with convenient options for everything from quick bites to relaxed meals close to home.",
@@ -1144,7 +1144,7 @@ export const homePageConfig = {
       alt: images.blog_alt2,
       category: "Outdoors",
       time: "6 min",
-      author: "La Prada Team",
+      author: "La Prada Place Team",
       date: "",
       title: "Exploring White Rock Lake & East Dallas Greenbelts",
       desc: "Enjoy scenic trails, peaceful green spaces, outdoor recreation, and relaxing weekend adventures around White Rock Lake and the surrounding East Dallas area.",
@@ -1155,7 +1155,7 @@ export const homePageConfig = {
       alt: images.blog_alt3,
       category: "Shopping",
       time: "3 min",
-      author: "La Prada Team",
+      author: "La Prada Place Team",
       date: "",
       title: "Weekend Shopping & Entertainment at Town East",
       desc: "Plan your weekend with shopping, dining, entertainment, and everyday conveniences at Town East Mall and the surrounding retail destinations.",
@@ -1166,7 +1166,7 @@ export const homePageConfig = {
       alt: images.blog_alt4,
       category: "Local Life",
       time: "5 min",
-      author: "La Prada Team",
+      author: "La Prada Place Team",
       date: "",
       title: "Discovering Everyday Life in East Dallas",
       desc: "Explore the neighborhoods, conveniences, parks, and local destinations that make living around La Prada Place an easy and connected East Dallas experience.",
@@ -1177,7 +1177,7 @@ export const homePageConfig = {
       alt: images.blog_alt5,
       category: "Community",
       time: "7 min",
-      author: "La Prada Team",
+      author: "La Prada Place Team",
       date: "",
       title: "Coffee, Dining & Local Favorites Near La Prada Place",
       desc: "Find neighborhood coffee shops, casual restaurants, and local favorites for relaxed mornings, quick lunches, and easy evenings close to home.",
@@ -1188,7 +1188,7 @@ export const homePageConfig = {
       alt: images.blog_alt6,
       category: "City Life",
       time: "4 min",
-      author: "La Prada Team",
+      author: "La Prada Place Team",
       date: "",
       title: "Easy Access to Downtown Dallas & City Attractions",
       desc: "See how La Prada Place connects you to Downtown Dallas, cultural destinations, entertainment, dining, and major city attractions.",
@@ -2038,24 +2038,24 @@ export const posts: Post[] = [
     category: "Outdoors",
     readTime: "6 min",
     initials: "LP",
-    author: "La Prada Team",
+    author: "La Prada Place Team",
     date: "",
 
-    title: "Exploring Bear Creek Greenbelt & Local Dallas Parks",
+    title: "Exploring White Rock Lake & East Dallas Greenbelts",
 
     description:
-      "Plan your morning run, dog walks, or sunny weekend picnic along the scenic Bear Creek trails and surrounding parks.",
+      "Plan your morning run, dog walk, bike ride, or scenic weekend picnic while exploring White Rock Lake and the beautiful green spaces around East Dallas.",
 
     img: images.blog2,
 
     content: [
-      "One of the great advantages of living at La Prada Place Apartment Homes is having opportunities to enjoy the outdoors close to home. From walking trails and neighborhood parks to peaceful green spaces, the Dallas area offers plenty of ways to spend time outside.",
+      "One of the great advantages of living at La Prada Place Apartment Homes is having opportunities to enjoy the outdoors throughout the Dallas area. From walking trails and neighborhood parks to scenic green spaces, there are plenty of ways to spend time outside.",
 
-      "Little Bear Creek Trails provides a convenient opportunity to get outside, enjoy a walk, and experience the natural surroundings near the community. The trail network connects several local parks and offers an easy way to add outdoor recreation to your everyday routine.",
+      "White Rock Lake is one of the area's well-known destinations for outdoor recreation. Residents and visitors can enjoy walking, running, cycling, relaxing by the water, and spending time outdoors surrounded by scenic views.",
 
-      "Whether you enjoy walking, spending time with family, exercising outdoors, or simply finding a quiet place to relax, the Bear Creek area provides a variety of options to explore.",
+      "The surrounding East Dallas greenbelts and parks provide additional opportunities for outdoor activities. Whether you're planning a morning workout, a dog walk, or a relaxed weekend picnic, there are different ways to enjoy the area's open spaces.",
 
-      "Living at La Prada Place Apartment Homes makes it easy to balance comfortable apartment living with outdoor adventures. Start your morning with a walk, visit a nearby park in the afternoon, or explore a new destination during the weekend.",
+      "Living at La Prada Place Apartment Homes makes it easy to balance comfortable apartment living with outdoor adventures. Start your morning with a walk, visit a nearby park in the afternoon, or explore a new outdoor destination during the weekend.",
     ],
   },
 
@@ -2063,24 +2063,24 @@ export const posts: Post[] = [
     category: "Community",
     readTime: "3 min",
     initials: "LP",
-    author: "La Prada Team",
+    author: "La Prada Place Team",
     date: "",
 
-    title: "Weekend Guide to Glade Parks & DFW Mid-Cities",
+    title: "Weekend Shopping & Entertainment at Town East",
 
     description:
-      "Your ultimate guide to premier retail, outdoor shopping, casual dining, and entertainment just a short drive up 121.",
+      "Explore shopping, dining, entertainment, and weekend activities at Town East and discover convenient destinations just a short drive from La Prada Place.",
 
     img: images.blog3,
 
     content: [
-      "Living in Dallas puts you within convenient reach of shopping, dining, recreation, and entertainment throughout the DFW Mid-Cities area.",
+      "Living at La Prada Place Apartment Homes puts a variety of shopping, dining, and entertainment destinations within convenient reach. Whether you're running everyday errands or planning a weekend outing, East Dallas offers plenty of choices.",
 
-      "Glade Parks and surrounding destinations provide opportunities to enjoy retail shopping, restaurants, outdoor spaces, and entertainment for a relaxed weekend close to home.",
+      "Town East and the surrounding area provide opportunities to explore retail stores, restaurants, entertainment venues, and outdoor shopping destinations. It's an easy option when you're looking for something to do without traveling far from home.",
 
-      "Whether you're planning a casual afternoon with friends, looking for a place to shop, or searching for a new restaurant to try, the surrounding Mid-Cities area offers plenty of choices.",
+      "A weekend visit can include shopping for essentials, browsing your favorite stores, meeting friends for a meal, or discovering a new entertainment destination nearby.",
 
-      "La Prada Place Apartment Homes provides a convenient home base for exploring Dallas and the broader DFW area while returning to a comfortable community at the end of the day.",
+      "With La Prada Place Apartment Homes as your home base, exploring Town East and the surrounding East Dallas area can become an easy part of your weekly routine.",
     ],
   },
 
@@ -2088,24 +2088,24 @@ export const posts: Post[] = [
     category: "Local Life",
     readTime: "5 min",
     initials: "LP",
-    author: "La Prada Team",
+    author: "La Prada Place Team",
     date: "",
 
-    title: "An Insider’s Look at Life Around Bear Creek",
+    title: "An Insider’s Look at Life Around La Prada Place",
 
     description:
-      "Discover how our quiet, tree-lined neighborhood offers the perfect balance of suburban retreat and easy connections to Dallas and the DFW area.",
+      "Discover the lifestyle at La Prada Place, where gated, tree-lined surroundings provide a peaceful home base with convenient access to shopping, dining, parks, and Dallas destinations.",
 
     img: images.blog4,
 
     content: [
-      "La Prada Place Apartment Homes offers a comfortable residential setting for residents who appreciate a quieter neighborhood while staying connected to everything Dallas and the DFW area have to offer.",
+      "La Prada Place Apartment Homes offers a comfortable residential setting for residents who appreciate peaceful surroundings while staying connected to the many conveniences of the Dallas area.",
 
-      "The Bear Creek area combines residential surroundings with convenient access to parks, trails, dining, shopping, and everyday services.",
+      "The community provides a welcoming environment with tree-lined surroundings and amenities designed to support everyday comfort. Residents can enjoy relaxing at home while keeping shopping, dining, recreation, and services within convenient reach.",
 
-      "Residents can enjoy peaceful time close to home while still having access to major roads and nearby destinations for work, shopping, entertainment, and recreation.",
+      "Life around La Prada Place offers a balance between quiet residential living and access to the wider Dallas area. Major roads and nearby destinations make it easier to plan your daily commute, weekend activities, and everyday errands.",
 
-      "With community amenities and local conveniences nearby, La Prada Place Apartment Homes offers a balanced lifestyle designed around comfort, accessibility, and everyday living.",
+      "Whether you're relaxing at home, enjoying community amenities, or exploring East Dallas, La Prada Place Apartment Homes provides a comfortable home base for your everyday lifestyle.",
     ],
   },
 
@@ -2113,22 +2113,22 @@ export const posts: Post[] = [
     category: "Culture",
     readTime: "7 min",
     initials: "LP",
-    author: "La Prada Team",
+    author: "La Prada Place Team",
     date: "",
 
-    title: "Coffee Shops & Casual Bites Near Fuller Wiser",
+    title: "Cozy Coffee Shops & Quick Bites Near Eastfield",
 
     description:
-      "We break down neighborhood favorites for weekend brunch, cozy specialty coffee shops, and quick casual bites around Dallas and Fuller Wiser.",
+      "Find neighborhood favorites for weekend brunch, specialty coffee, quick bites, and relaxed study sessions around Eastfield and East Dallas.",
 
     img: images.blog5,
 
     content: [
-      "A good neighborhood is about more than convenience. Local cafés and casual restaurants provide comfortable places to start the morning, meet friends, or enjoy a relaxed meal.",
+      "A great neighborhood is about more than convenience. Local cafés and casual restaurants provide comfortable places to start the morning, meet friends, enjoy brunch, or take a break during a busy day.",
 
-      "The Fuller Wiser area and surrounding Dallas neighborhoods offer a variety of places to discover, from coffee shops and casual breakfast spots to convenient restaurants for lunch and dinner.",
+      "The Eastfield and surrounding East Dallas areas offer a variety of places to discover, from coffee shops and breakfast spots to casual restaurants serving convenient lunch and dinner options.",
 
-      "Exploring local cafés is also an easy way to make your weekends more enjoyable. Grab a coffee, meet a friend for brunch, or find a new favorite spot close to home.",
+      "Exploring local cafés can also be an easy way to make your weekends more enjoyable. Grab a coffee, meet a friend for brunch, find a quiet place to work or study, or discover a new favorite neighborhood spot.",
 
       "With La Prada Place Apartment Homes as your home base, discovering local coffee shops and casual dining destinations can become part of your everyday Dallas lifestyle.",
     ],
@@ -2138,28 +2138,27 @@ export const posts: Post[] = [
     category: "City Life",
     readTime: "4 min",
     initials: "LP",
-    author: "La Prada Team",
+    author: "La Prada Place Team",
     date: "",
 
-    title: "Weekend Getaways: Lake Grapevine to DFW Nature Hubs",
+    title: "Quick Getaways: Lake Ray Hubbard & Dallas Arts Hubs",
 
     description:
-      "Spend an afternoon on the water or explore lakeside nature preserves and outdoor destinations with a convenient trip from Dallas.",
+      "Spend an afternoon at Lake Ray Hubbard or explore museums, galleries, restaurants, and nightlife in Dallas with convenient drives from your home at La Prada Place.",
 
     img: images.blog6,
 
     content: [
-      "Living in Dallas provides access to a wide range of outdoor destinations throughout the DFW area. When the weekend arrives, residents can explore parks, lakes, trails, and other places to enjoy time outside.",
+      "Living in the Dallas area gives residents access to a wide variety of destinations for weekend adventures. From lakes and outdoor recreation to museums, galleries, restaurants, and entertainment, there's always something new to explore.",
 
-      "Lake Grapevine and other nearby nature destinations offer opportunities for outdoor recreation, relaxing by the water, walking, and enjoying the surrounding scenery.",
+      "Lake Ray Hubbard provides an opportunity to enjoy time outdoors, with activities centered around the water and surrounding recreational areas. It's a convenient option when you're looking for a change of scenery or a relaxing afternoon outside.",
 
-      "For residents who enjoy exploring, a short trip can turn an ordinary weekend into an opportunity to discover a new park, nature area, or outdoor destination.",
+      "For those interested in arts and culture, Dallas offers museums, galleries, entertainment venues, restaurants, and nightlife across several vibrant neighborhoods. A short drive can turn an ordinary weekend into an opportunity to discover something new.",
 
-      "La Prada Place Apartment Homes gives residents a convenient home base for enjoying both the comforts of apartment living and the many outdoor experiences available throughout the DFW area.",
+      "La Prada Place Apartment Homes provides a convenient home base for enjoying both the comforts of apartment living and the many experiences available throughout Dallas and the surrounding DFW area.",
     ],
   },
 ];
-
 // ======================================================
 // FEATURED BLOG POST
 // ======================================================
@@ -2167,13 +2166,13 @@ export const featuredPost: Post = {
   category: "Local Life",
   readTime: "5 min",
   initials: "LP",
-  author: "La Prada Team",
+  author: "La Prada Place Team",
   date: "",
 
-  title: "Discover Local Life Around La Prada Place Apartment Homes",
+  title: "Must-Try Dining & Local Flavors in East Dallas",
 
   description:
-    "Explore East Dallas dining, shopping, recreation, education, and everyday conveniences surrounding La Prada Place Apartment Homes in Dallas, Texas.",
+    "From authentic Texas pit barbecue and Tex-Mex favorites to cozy cafes along I-30 and Ferguson Road, explore standout culinary spots just minutes outside your door.",
 
   img: images.blog1,
 
@@ -2205,11 +2204,11 @@ export const articles = [
     readTime: "4 min",
     authorInitials: "LP",
     authorBg: "bg-[#E09428]/10 text-[#E09428]",
-    authorName: "La Prada Team",
+    authorName: "La Prada Place Team",
     date: "",
     title: "Must-Try Dining & Local Flavors in East Dallas",
     description:
-      "Discover local restaurants, cafés, casual dining, and flavorful destinations around East Dallas, with plenty of options close to La Prada Place.",
+      "From authentic Texas barbecue and Tex-Mex favorites to cozy cafés along I-30 and Ferguson Road, discover standout local dining spots just minutes from La Prada Place.",
     image: "/images/blog/1.webp",
   },
 
@@ -2220,26 +2219,26 @@ export const articles = [
     readTime: "6 min",
     authorInitials: "LP",
     authorBg: "bg-[#2a5a8f]/10 text-[#2a5a8f]",
-    authorName: "La Prada Team",
+    authorName: "La Prada Place Team",
     date: "",
     title: "Exploring White Rock Lake & East Dallas Greenbelts",
     description:
-      "Explore scenic trails, waterfront recreation, green spaces, and relaxing outdoor destinations around White Rock Lake and East Dallas.",
+      "Plan your morning run, dog walk, bike ride, or scenic weekend picnic while exploring White Rock Lake and the beautiful green spaces around East Dallas.",
     image: "/images/blog/2.webp",
   },
 
   {
     id: 3,
-    category: "Shopping",
+    category: "Community",
     categoryColor: "bg-[#1E3872]/10 text-[#1E3872]",
     readTime: "3 min",
     authorInitials: "LP",
     authorBg: "bg-[#1E3872]/10 text-[#1E3872]",
-    authorName: "La Prada Team",
+    authorName: "La Prada Place Team",
     date: "",
     title: "Weekend Shopping & Entertainment at Town East",
     description:
-      "Plan your weekend with shopping, dining, entertainment, and everyday conveniences at Town East Mall and the surrounding retail hub.",
+      "Explore shopping, dining, entertainment, and weekend activities at Town East and discover convenient destinations just a short drive from La Prada Place.",
     image: "/images/blog/3.webp",
   },
 
@@ -2250,26 +2249,26 @@ export const articles = [
     readTime: "5 min",
     authorInitials: "LP",
     authorBg: "bg-[#E09428]/10 text-[#E09428]",
-    authorName: "La Prada Team",
+    authorName: "La Prada Place Team",
     date: "",
-    title: "Discovering Everyday Life in East Dallas",
+    title: "An Insider’s Look at Life Around La Prada Place",
     description:
-      "Explore the neighborhoods, local conveniences, parks, dining, and destinations that make life around La Prada Place easy and connected.",
+      "Discover the lifestyle at La Prada Place, where gated, tree-lined surroundings provide a peaceful home base with convenient access to shopping, dining, parks, and Dallas destinations.",
     image: "/images/blog/4.webp",
   },
 
   {
     id: 5,
-    category: "Community",
+    category: "Culture",
     categoryColor: "bg-[#2a5a8f]/10 text-[#2a5a8f]",
     readTime: "7 min",
     authorInitials: "LP",
     authorBg: "bg-[#2a5a8f]/10 text-[#2a5a8f]",
-    authorName: "La Prada Team",
+    authorName: "La Prada Place Team",
     date: "",
-    title: "Coffee, Dining & Local Favorites Near La Prada Place",
+    title: "Cozy Coffee Shops & Quick Bites Near Eastfield",
     description:
-      "Find neighborhood coffee shops, casual restaurants, and local favorites for relaxed mornings, quick meals, and easy evenings close to home.",
+      "Find neighborhood favorites for weekend brunch, specialty coffee, quick bites, and relaxed study sessions around Eastfield and East Dallas.",
     image: "/images/blog/5.webp",
   },
 
@@ -2280,11 +2279,11 @@ export const articles = [
     readTime: "4 min",
     authorInitials: "LP",
     authorBg: "bg-[#5a3a7a]/10 text-[#5a3a7a]",
-    authorName: "La Prada Team",
+    authorName: "La Prada Place Team",
     date: "",
-    title: "Downtown Dallas & East Dallas City Guide",
+    title: "Quick Getaways: Lake Ray Hubbard & Dallas Arts Hubs",
     description:
-      "Discover convenient access to Downtown Dallas, cultural attractions, entertainment, dining, and major destinations from La Prada Place.",
+      "Spend an afternoon at Lake Ray Hubbard or explore museums, galleries, restaurants, and nightlife in Dallas with convenient drives from your home at La Prada Place.",
     image: "/images/blog/6.webp",
   },
 ];
