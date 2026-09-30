@@ -148,7 +148,7 @@ function Card({
       </div>
 
       {/* Floor Plan */}
-      <div className="relative h-[355px] w-full border-b border-[#eee7dc] bg-[#fbfaf7]">
+      <div className="relative h-[355px] w-full border-b border-[#eee7dc] bg-white">
         <img
           src={plan.images[0]}
           alt={getFloorPlanAlt(plan)}
