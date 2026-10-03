@@ -34,7 +34,7 @@ export const floorPlansSpecial = {
   id: "floor-plans-special",
   badge: "LOOK & LEASE SPECIAL",
   headline: "Special Promotion - Huge Specials",
-  badges: ["1 Month Free Special", " Must move in by September 30, 2026!"],
+  badges: ["1 Month Free Special", "Must move in by October 31, 2026!"],
   phone: "(214) 321-2237",
   tel: "tel:+12143212237",
 };
@@ -45,7 +45,7 @@ export const lookLeaseOffer = {
   title: "Look & Lease Special",
   subtext:
     "Get 1 Month Free on your new home! Act fast to lock in this limited-time rate.",
-  highlight: " Must move in by September 30, 2026!",
+  highlight: " Must move in by October 31, 2026!",
   buttonText: "Call Now: (214) 321-2237",
   buttonHref: "tel:+12143212237",
 };
@@ -69,7 +69,7 @@ export const PromoCardWidgetConfig = {
     {
       title: "Contact Us Today",
       text: "Call us right now for details.",
-      highlight: "Must move in by September 30, 2026.",
+      highlight: "Must move in by October 31, 2026.",
       suffix: "Restrictions apply",
       theme: "blue",
     },
