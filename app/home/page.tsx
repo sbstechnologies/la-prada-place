@@ -39,7 +39,7 @@ import {
 
 import FooterLegalBar from "@/app/components/FooterLegalBar";
 import TourScheduler from "@/app/components/TourScheduler";
-import HousingVoucher from "@/app/components/HousingVoucher";
+
 import UnitOverview from "@/app/components/UnitOverview";
 import { s } from "framer-motion/client";
 
@@ -843,7 +843,7 @@ export default function Home() {
           <div className="mb-8 sm:mb-10 flex items-end justify-between gap-4">
             <div>
               <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.08em] text-[#5A6260]">
-                Fort worth Living Guide
+                Dallas Living Guide
               </p>
               <h2
                 className={`${instrumentSerif.className} text-[28px] sm:text-4xl md:text-5xl lg:text-[54px] font-normal leading-[1.1] text-[#2D3230]`}
@@ -1040,8 +1040,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <HousingVoucher />
 
       {/* ================= LEASING CTA ================= */}
       <section
