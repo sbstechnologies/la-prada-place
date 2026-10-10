@@ -423,7 +423,6 @@ export default function UnitOverview({
               <p className="mb-4 font-[Plus_Jakarta_Sans] text-[11px] font-semibold uppercase tracking-[0.16em] text-[#50627a]">
                 Plan Features
               </p>
-
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
                 {[
                   ["Highlights", planFeatures.highlights],
@@ -439,6 +438,10 @@ export default function UnitOverview({
                       {(items as string[]).map((item) => (
                         <li key={item}>{item}</li>
                       ))}
+                      {title === "Interior" &&
+                        ["A2", "A3", "B1", "B2"].includes(safeSelectedPlan) && (
+                          <li>Walk-In Closet</li>
+                        )}
                     </ul>
                   </div>
                 ))}
