@@ -629,7 +629,7 @@ export default function Home() {
             {/* USER INFO */}
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-5 mt-6 sm:mt-8 font-[Plus_Jakarta_Sans]">
               <div className="flex items-center gap-3">
-                <div className="w-[40px] h-[40px] sm:w-[42px] sm:h-[42px] rounded-full bg-[#1e3872] flex items-center justify-center text-[11px] sm:text-[12px] font-extrabold text-white tracking-wide shrink-0 shadow-[0_4px_14px_rgba(30,56,114,0.27)]">
+                <div className="w-10 h-10 sm:w-10.5 sm:h-10.5 rounded-full bg-[#1e3872] flex items-center justify-center text-[11px] sm:text-[12px] font-extrabold text-white tracking-wide shrink-0 shadow-[0_4px_14px_rgba(30,56,114,0.27)]">
                   {reviews[reviewIndex].initials}
                 </div>
                 <div>

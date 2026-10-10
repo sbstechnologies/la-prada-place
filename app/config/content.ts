@@ -15,7 +15,7 @@ export const siteConfig = {
   propertyManagerEmail: "Lprmanager@livenjoymgt.com",
 
   hours: "Mon–Fri: 8:30 AM – 5:30 PM",
-  hours1: "Sat: 10:00 AM – 5:00 PM",
+  hours1: "OPen Only By Appointment",
 
   website: "https://www.leaselapradaapartments.com",
 
@@ -922,7 +922,6 @@ export const leasePortalConfig = {
 export const homePageConfig = {
   planFeatures: {
     highlights: [
-      "High-Speed Internet",
       "Washer/Dryer Hookups",
       "Air Conditioning",
       "Heating",
@@ -931,19 +930,11 @@ export const homePageConfig = {
       "Tub/Shower",
     ],
 
-    kitchen: [
-      "Dishwasher",
-      "Disposal",
-      "Microwave",
-      "Refrigerator",
-      "Range",
-      "Upgraded Cabinetry",
-    ],
+    kitchen: ["Dishwasher", "Disposal", "Refrigerator", "Range"],
 
     interior: [
       "Wood-Style Vinyl Flooring",
       "Private Patio/Balcony",
-      "Walk-In Closets",
       "Window Coverings",
     ],
   },
@@ -991,13 +982,13 @@ export const homePageConfig = {
       alt: images.amenities_alt6,
     },
   ],
+
   alsoIncluded: [
     "Business Center with WiFi",
     "Wood-Burning Fireplaces*",
     "Full-Size W/D Connections",
     "Private Patios & Balconies",
     "Reserved Covered Parking",
-    "Private Garages Available*",
     "24-Hour Emergency Maintenance",
     "Close to DART Bus Line",
   ],
@@ -1103,7 +1094,7 @@ export const homePageConfig = {
       name: "Verified Resident",
       role: "Google Review",
       years: "Resident for 2 Years",
-      initials: "LP",
+      initials: "LPP",
       rating: 5,
       text: "Living at La Prada Place has been a wonderful experience. The gated layout and quiet neighborhood give you real peace of mind, yet everything along I-30 and Ferguson Road is just minutes away. The management team is super attentive, maintenance is handled quickly, and having a townhome layout with our own fireplace is unbeatable.",
     },
@@ -1112,7 +1103,7 @@ export const homePageConfig = {
       name: "Verified Resident",
       role: "1-Bedroom Resident",
       years: "La Prada Place Resident",
-      initials: "LP",
+      initials: "LPP",
       rating: 5,
       text: "La Prada Place offers a comfortable and peaceful place to call home. I love the convenient location near shopping, dining, and everyday essentials, while the gated community provides a quiet atmosphere away from the surrounding city.",
     },
@@ -1121,7 +1112,7 @@ export const homePageConfig = {
       name: "Verified Resident",
       role: "2-Bedroom Resident",
       years: "La Prada Place Resident",
-      initials: "LP",
+      initials: "LPP",
       rating: 5,
       text: "The townhome-style layout gives us plenty of space and privacy, and having a fireplace makes the home feel especially cozy. Management is responsive, maintenance is handled quickly, and the location makes getting around East Dallas and the DFW area very convenient.",
     },
@@ -2037,7 +2028,7 @@ export const posts: Post[] = [
   {
     category: "Outdoors",
     readTime: "6 min",
-    initials: "LP",
+    initials: "LPP",
     author: "La Prada Place Team",
     date: "",
 
@@ -2062,7 +2053,7 @@ export const posts: Post[] = [
   {
     category: "Community",
     readTime: "3 min",
-    initials: "LP",
+    initials: "LPP",
     author: "La Prada Place Team",
     date: "",
 
@@ -2087,7 +2078,7 @@ export const posts: Post[] = [
   {
     category: "Local Life",
     readTime: "5 min",
-    initials: "LP",
+    initials: "LPP",
     author: "La Prada Place Team",
     date: "",
 
@@ -2112,7 +2103,7 @@ export const posts: Post[] = [
   {
     category: "Culture",
     readTime: "7 min",
-    initials: "LP",
+    initials: "LPP",
     author: "La Prada Place Team",
     date: "",
 
@@ -2137,7 +2128,7 @@ export const posts: Post[] = [
   {
     category: "City Life",
     readTime: "4 min",
-    initials: "LP",
+    initials: "LPP",
     author: "La Prada Place Team",
     date: "",
 
@@ -2165,7 +2156,7 @@ export const posts: Post[] = [
 export const featuredPost: Post = {
   category: "Local Life",
   readTime: "5 min",
-  initials: "LP",
+  initials: "LPP",
   author: "La Prada Place Team",
   date: "",
 
@@ -2202,7 +2193,7 @@ export const articles = [
     category: "Local Eats",
     categoryColor: "bg-[#E09428]/10 text-[#E09428]",
     readTime: "4 min",
-    authorInitials: "LP",
+    authorInitials: "LPP",
     authorBg: "bg-[#E09428]/10 text-[#E09428]",
     authorName: "La Prada Place Team",
     date: "",
@@ -2217,7 +2208,7 @@ export const articles = [
     category: "Outdoors",
     categoryColor: "bg-[#2a5a8f]/10 text-[#2a5a8f]",
     readTime: "6 min",
-    authorInitials: "LP",
+    authorInitials: "LPP",
     authorBg: "bg-[#2a5a8f]/10 text-[#2a5a8f]",
     authorName: "La Prada Place Team",
     date: "",
@@ -2232,7 +2223,7 @@ export const articles = [
     category: "Community",
     categoryColor: "bg-[#1E3872]/10 text-[#1E3872]",
     readTime: "3 min",
-    authorInitials: "LP",
+    authorInitials: "LPP",
     authorBg: "bg-[#1E3872]/10 text-[#1E3872]",
     authorName: "La Prada Place Team",
     date: "",
@@ -2247,7 +2238,7 @@ export const articles = [
     category: "Local Life",
     categoryColor: "bg-[#E09428]/10 text-[#E09428]",
     readTime: "5 min",
-    authorInitials: "LP",
+    authorInitials: "LPP",
     authorBg: "bg-[#E09428]/10 text-[#E09428]",
     authorName: "La Prada Place Team",
     date: "",
@@ -2262,7 +2253,7 @@ export const articles = [
     category: "Culture",
     categoryColor: "bg-[#2a5a8f]/10 text-[#2a5a8f]",
     readTime: "7 min",
-    authorInitials: "LP",
+    authorInitials: "LPP",
     authorBg: "bg-[#2a5a8f]/10 text-[#2a5a8f]",
     authorName: "La Prada Place Team",
     date: "",
@@ -2277,7 +2268,7 @@ export const articles = [
     category: "City Life",
     categoryColor: "bg-[#5a3a7a]/10 text-[#5a3a7a]",
     readTime: "4 min",
-    authorInitials: "LP",
+    authorInitials: "LPP",
     authorBg: "bg-[#5a3a7a]/10 text-[#5a3a7a]",
     authorName: "La Prada Place Team",
     date: "",
