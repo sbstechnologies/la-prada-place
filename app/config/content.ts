@@ -15,7 +15,7 @@ export const siteConfig = {
   propertyManagerEmail: "Lprmanager@livenjoymgt.com",
 
   hours: "Mon–Fri: 8:30 AM – 5:30 PM",
-  hours1: "OPen Only By Appointment",
+  hours1: "Open Only By Appointment",
 
   website: "https://www.leaselapradaapartments.com",
 

@@ -141,14 +141,14 @@ export default function Contact() {
                   <div className="flex justify-between gap-6 text-[#1f2937]">
                     <span>Monday – Friday</span>
                     <span className="font-semibold text-[#163c84]">
-                      8:30 AM – 5:30 PM
+                      {siteConfig.hours}
                     </span>
                   </div>
 
                   <div className="flex justify-between gap-6 text-[#1f2937]">
                     <span>Saturday</span>
                     <span className="font-semibold text-[#163c84]">
-                      10:00 AM – 4:00 PM
+                      {siteConfig.hours1}
                     </span>
                   </div>
 

@@ -100,7 +100,7 @@ export default function Footer() {
 
                     {siteConfig.hours1 && (
                       <span className="font-[Plus_Jakarta_Sans] text-[13px] leading-[1.4] text-[rgba(245,242,237,0.55)]">
-                        {siteConfig.hours1}
+                        Sat: {siteConfig.hours1}
                       </span>
                     )}
                   </div>

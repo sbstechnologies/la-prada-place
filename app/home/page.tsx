@@ -1158,7 +1158,7 @@ export default function Home() {
 
             {/* Hours 1 */}
             <span className="font-[Plus_Jakarta_Sans] text-[13px] text-[rgba(245,242,237,0.55)]">
-              {siteConfig.hours1}
+              Sat: {siteConfig.hours1}
             </span>
           </div>
         </div>

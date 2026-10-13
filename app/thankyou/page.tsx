@@ -141,14 +141,14 @@ export default function Contact() {
                   <div className="flex justify-between gap-6 text-[#1f2937]">
                     <span>Monday – Friday</span>
                     <span className="font-semibold text-[#163c84]">
-                      {siteConfig.hours.replace("Mon–Fri: ", "")}
+                      {siteConfig.hours}
                     </span>
                   </div>
 
                   <div className="flex justify-between gap-6 text-[#1f2937]">
                     <span>Saturday</span>
                     <span className="font-semibold text-[#163c84]">
-                      {siteConfig.hours1.replace("Sat: ", "")}
+                      {siteConfig.hours1}
                     </span>
                   </div>
 
